@@ -1,13 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="format-detection" content="telephone=no">
+  <title>Фитнес центр "Supergym"</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <h1 class="visually-hidden">Фитнес центр "Supergym"</h1>
+
+    <div class="page-header__wrapper">
+      <ul class="page-header__group">
+        <li class="page-header__logo">Supergym</li>
+        <li class="page-header__phone">8-800-555-55-55</li>
+      </ul>
+    </div>
+
+    <div class="page-header__advert advert">
+      <div class="advert__wrapper">
+        <p class="advert__location">Омск</p>
+        <div class="advert__titles-wrapper">
+          <h2 class="advert__title">Фитнес центр</h2>
+          <ul class="advert__subtitle-list">
+            <li class="advert__subtitle-item">Тренажёрный зал</li>
+            <li class="advert__subtitle-item">Групповые занятия</li>
+            <li class="advert__subtitle-item">Кардио-зона</li>
+          </ul>
+        </div>
+        <a href="" class="advert__button button">Купить абонемент</a>
+      </div>
+      <div class="advert__pucture">
+        <img src="img/desktop_promo1@1x.png" width="500" height="556" alt="">
+      </div>
+      <div class="advert__social social">
+        <ul class="advert__social-list">
+          <li class="advert__social-item">
+            <a class="advert__social-link" href="#">
+              <span class="visually-hidden">facebook</span>
+              <!-- <svg width="17.5" height="14.663">
+                <use xlink:href="#icon-twitter"></use>
+              </svg> -->
+            </a>
+          </li>
+          <li class="advert__social-item">
+            <a class="advert__social-link" href="#">
+              <span class="visually-hidden">vkontakte</span>
+              <!-- <svg width="17.5" height="14.663">
+                <use xlink:href="#icon-twitter"></use>
+              </svg> -->
+            </a>
+          </li>
+          <li class="advert__social-item">
+            <a class="advert__social-link" href="#">
+              <span class="visually-hidden">instagram</span>
+              <!-- <svg width="17.5" height="14.663">
+                <use xlink:href="#icon-twitter"></use>
+              </svg> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <section class="gym-hall">
+      <h2 class="visually-hidden">Тренажерный зал</h2>
+      <div class="gym-hall__wrapper">
+        <div class="gym-hall__promo">
+          <h3 class="gym-hall__title">Тренажерный зал</h3>
+          <p class="gym-hall__subtitle">Просторный зал площадью 900 кв/м</p>
+          <p class="gym-hall__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="gym-hall__description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="gym-hall__pucture">
+          <img src="img/desktop_promo2@1x.png" width="660" height="401" alt="">
+        </div>
+        <div class="gym-hall__video">
+          <img src="img/desktop_promo3@1x.png" width="364" height="228" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription">
+      <h2 class="visually-hidden">Абонементы</h2>
+      <div class="subscription__header">
+        <h3 class="subcription__title">Абонементы</h3>
+          <ul class="subscription__period-list">
+            <li class="subscription__period-item">1 месяц</li>
+            <li class="subscription__period-item">6 месяцев</li>
+            <li class="subscription__period-item">12 месяцев</li>
+          </ul>
+      </div>
+      <ul class="subscription__type-list">
+        <li class="subscription__type-item">
+          <h3>С тренером</h3>
+          <p class="subscription__type-subtitle">12 занятий</p>
+          <p class="subscription__type-price">5000 &#8381</p>
+          <a href="" class="subscription__type-button button">купить абонемент</a>
+        </li>
+        <li class="subscription__type-item">
+          <h3>Дневной</h3>
+          <p class="subscription__type-subtitle">с 8:00 до 17:00 </p>
+          <p class="subscription__type-price">1700 &#8381</p>
+          <a href="" class="subscription__type-button button">купить абонемент</a>
+        </li>
+        <li class="subscription__type-item type-item">
+          <h3>Полный день</h3>
+          <p class="subscription__type-subtitle">с 8:00 до 22:00 </p>
+          <p class="subscription__type-price">2700 &#8381</p>
+          <a href="" class="subscription__type-button button">купить абонемент</a>
+        </li>
+      </ul>
+      <img class="subscription__background" src="img/bg_1@1x.png" width="287" height="494" alt="">
+    </section>
+
+    <section class="promo">
+      <h2 class="visually-hidden">Промоакции</h2>
+      <div class="promo__wrapper">
+        <div class="promo__info-wrapper">
+          <div class="promo__header">
+            <h3 class="promo__title">Super games</h3>
+            <div class="promo__duration">
+              <div class="promo__date">
+                <p class="promo__date-title">Дата</p>
+                <span class="promo__date-day">7</span>
+                <p  class="promo__date-month">Марта 2019</p>
+              </div>
+              <div class="promo__time">
+                <p class="promo__time-title">Время</p>
+                <span>12:00</span>
+              </div>
+            </div>
+          </div>
+          <p class="promo__description">Ежегодные соревнования по CrossFit</p>
+          <a href="" class="promo__button button">заполнить заявку</a>
+        </div>
+        <img class="promo__picture" src="img/desktop_event@1x.png" width="660" height="500" alt="">
+      </div>
+    </section>
+
+    <section class="coach">
+      <h2 class="visually-hidden">Тренеры</h2>
+      <div class="coach__wrapper">
+        <h3>Тренеры</h3>
+        <ul class="coach__list">
+          <li class="coach__item">
+            <img class="coach__picture" src="img/desktop_coach1@1x.png" width="260" height="294" alt="">
+            <p class="coach__name">Анна Павлова</p>
+          </li>
+          <li class="coach__item">
+            <img class="coach__picture" src="img/desktop_coach2@1x.png" width="260" height="294" alt="">
+            <p class="coach__name">Алексей Лавров</p>
+          </li>
+          <li class="coach__item">
+            <img class="coach__picture" src="img/desktop_coach3@1x.png" width="260" height="294" alt="">
+            <p class="coach__name">Александр Пашков</p>
+          </li>
+          <li class="coach__item">
+            <img class="coach__picture" src="img/desktop_coach4@1x.png" width="260" height="294" alt="">
+            <p class="coach__name">Мария Кетова</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <div class="advantages__wrapper">
+        <h3>Наши преимущества</h3>
+        <div class="advantages__group">
+          <div class="advantages__item-number">
+            <h4>900</h4>
+            <p>кв/м</p>
+          </div>
+          <div class="advantages__item-description">
+            <h4>Площадь</h4>
+            <p>Занимайтесь без очередей и толпучки</p>
+          </div>
+        </div>
+        <div class="advantages__group">
+          <div class="advantages__item-number">
+            <h4>70</h4>
+            <p>машин</p>
+          </div>
+          <div class="advantages__item-description">
+            <h4>Собственная парковка</h4>
+            <p>Вы всегда найдете место для своей машины на нашей парковке </p>
+          </div>
+        </div>
+        <div class="advantages__group">
+          <div class="advantages__item-number">
+            <h4>350</h4>
+            <p>мест</p>
+          </div>
+          <div class="advantages__item-description">
+            <h4>Комфорт</h4>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </div>
+        </div>
+        <div class="advantages__group">
+          <div class="advantages__item-number">
+            <h4>5+</h4>
+            <p>лет</p>
+          </div>
+          <div class="advantages__item-description">
+            <h4>Тренерский опыт</h4>
+            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </div>
+        </div>
+        <div class="advantages__block">
+            <h4>100</h4>
+            <p>Тренажеров</p>
+            <p class="advantages__block-description">Современные тренажеры на все группы мышц</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="action">
+      <h2 class="visually-hidden">Акции</h2>
+      <div class="action__wrapper">
+        <h3>Акции</h3>
+        <div class="action__group">
+          <div class="action__part">
+            <h4>Год</h4>
+            <span>4999</span>
+            <p class="action__part-description">Безлимитный абонемент в тренажерный зал</p>
+            <a href="" class="">подробнее</a>
+          </div>
+          <img class="action__picture" src="img/desktop_action@1x.png" width="280" height="462" alt="">
+        </div>
+      </div>
+      <ul class="action__list">
+        <li class="action__item">
+          <h3>Месяц бесплатно</h3>
+          <p>Приведи друга, получи абонемент в подарок</p>
+          <a href="" class="">подробнее</a>
+        </li>
+        <li class="action__item">
+          <h3>Скидка 20%</h3>
+          <p>Корпоративный фитнес с командой</p>
+          <a href="" class="">подробнее</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="action">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="action__wrapper">
+        <h3>Отзывы</h3>
+        <div class="action__group">
+          <img class="action__picture" src="img/desktop_review@1x.png" width="80" height="80" alt="">
+          <div class="action__item">
+            <h4>Анна Орлова</h4>
+            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__first-row first-row">
+         <div class="first-row__group">
+           <h3>БЕСПЛАТНОЕ занятие</h3>
+           <ul class="first-row__user-info">
+             <li>Имя</li>
+             <li>Телефон</li>
+           </ul>
+           <a class="first-row__link" href="#">отправить</a>
+         </div>
+         <div class="first-row__group">
+           <h3>Контакты </h3>
+           <ul class="first-row__contacts-list">
+             <li class="first-row__contacts-item">
+               <h4>Адрес:</h4>
+               <p>г. Омск, ул. 60 лет Октября, 7</p>
+             </li>
+             <li class="first-row__contacts-item">
+               <h4>График работы:</h4>
+               <p>Пн-Вс: с 8:00 до 22:00</p>
+             </li>
+             <li class="first-row__contacts-item">
+               <h4>Телефон:</h4>
+               <p>8-800-555-55-55</p>
+             </li>
+             <li class="first-row__contacts-item">
+               <h4>Email:</h4>
+               <p>omsk@supergym.ru</p>
+             </li>
+           </ul>
+         </div>
+      </div>
+      <div class="page-footer__second-row second-row">
+        <p>Supergym</p>
+        <ul class="second-row__nav-list">
+          <li class="second-row__nav-item">
+            <a href="#">Услуги</a>
+          </li>
+          <li class="second-row__nav-item">
+            <a href="#">Абонементы</a>
+          </li>
+          <li class="second-row__nav-item">
+            <a href="#">Акции</a>
+          </li>
+          <li class="second-row__nav-item">
+            <a href="#">Тренеры</a>
+          </li>
+          <li class="second-row__nav-item">
+            <a href="#">Расписание  </a>
+          </li>
+        </ul>
+        <ul class="second-row__social">
+          <li class="second-row__social-item">
+            <a class="second-row__social-link" href="#">
+              <span class="visually-hidden">facebook</span>
+              <!-- <svg width="17.5" height="14.663">
+                <use xlink:href="#icon-twitter"></use>
+              </svg> -->
+            </a>
+          </li>
+          <li class="second-row__social-item">
+            <a class="second-row__social-link" href="#">
+              <span class="visually-hidden">vkontakte</span>
+              <!-- <svg width="17.5" height="14.663">
+                <use xlink:href="#icon-twitter"></use>
+              </svg> -->
+            </a>
+          </li>
+          <li class="second-row__social-item">
+            <a class="second-row__social-link" href="#">
+              <span class="visually-hidden">instagram</span>
+              <!-- <svg width="17.5" height="14.663">
+                <use xlink:href="#icon-twitter"></use>
+              </svg> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
