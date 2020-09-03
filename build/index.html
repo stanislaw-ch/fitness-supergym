@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header container">
     <h1 class="visually-hidden">Фитнес центр "Supergym"</h1>
 
     <div class="page-header__wrapper">
@@ -17,58 +17,59 @@
         <li class="page-header__logo">Supergym</li>
         <li class="page-header__phone">8-800-555-55-55</li>
       </ul>
-    </div>
 
-    <div class="page-header__advert advert">
-      <div class="advert__wrapper">
-        <p class="advert__location">Омск</p>
-        <div class="advert__titles-wrapper">
-          <h2 class="advert__title">Фитнес центр</h2>
-          <ul class="advert__subtitle-list">
-            <li class="advert__subtitle-item">Тренажёрный зал</li>
-            <li class="advert__subtitle-item">Групповые занятия</li>
-            <li class="advert__subtitle-item">Кардио-зона</li>
+      <div class="page-header__advert advert">
+        <div class="advert__wrapper">
+          <p class="advert__location">Омск</p>
+          <div class="advert__header">
+            <h2 class="advert__title">Фитнес центр</h2>
+            <ul class="advert__subtitle-list">
+              <li class="advert__subtitle-item">Тренажёрный зал</li>
+              <li class="advert__subtitle-item">Групповые занятия</li>
+              <li class="advert__subtitle-item">Кардио-зона</li>
+            </ul>
+          </div>
+          <a href="" class="advert__button button">Купить абонемент</a>
+        </div>
+        <div class="advert__pucture">
+          <img src="img/desktop_promo1@1x.png" width="500" height="556" alt="">
+        </div>
+        <div class="advert__social">
+          <ul class="advert__social-list">
+            <li class="advert__social-item">
+              <a class="advert__social-link" href="#">FB
+                <span class="visually-hidden">facebook</span>
+                <!-- <svg width="17.5" height="14.663">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg> -->
+              </a>
+            </li>
+            <li class="advert__social-item">
+              <a class="advert__social-link" href="#">VK
+                <span class="visually-hidden">vkontakte</span>
+                <!-- <svg width="17.5" height="14.663">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg> -->
+              </a>
+            </li>
+            <li class="advert__social-item">
+              <a class="advert__social-link" href="#">IG
+                <span class="visually-hidden">instagram</span>
+                <!-- <svg width="17.5" height="14.663">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg> -->
+              </a>
+            </li>
           </ul>
         </div>
-        <a href="" class="advert__button button">Купить абонемент</a>
-      </div>
-      <div class="advert__pucture">
-        <img src="img/desktop_promo1@1x.png" width="500" height="556" alt="">
-      </div>
-      <div class="advert__social social">
-        <ul class="advert__social-list">
-          <li class="advert__social-item">
-            <a class="advert__social-link" href="#">
-              <span class="visually-hidden">facebook</span>
-              <!-- <svg width="17.5" height="14.663">
-                <use xlink:href="#icon-twitter"></use>
-              </svg> -->
-            </a>
-          </li>
-          <li class="advert__social-item">
-            <a class="advert__social-link" href="#">
-              <span class="visually-hidden">vkontakte</span>
-              <!-- <svg width="17.5" height="14.663">
-                <use xlink:href="#icon-twitter"></use>
-              </svg> -->
-            </a>
-          </li>
-          <li class="advert__social-item">
-            <a class="advert__social-link" href="#">
-              <span class="visually-hidden">instagram</span>
-              <!-- <svg width="17.5" height="14.663">
-                <use xlink:href="#icon-twitter"></use>
-              </svg> -->
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
+
   </header>
 
   <main class="page-main">
 
-    <section class="gym-hall">
+    <section class="gym-hall container">
       <h2 class="visually-hidden">Тренажерный зал</h2>
       <div class="gym-hall__wrapper">
         <div class="gym-hall__promo">
@@ -86,40 +87,42 @@
       </div>
     </section>
 
-    <section class="subscription">
-      <h2 class="visually-hidden">Абонементы</h2>
-      <div class="subscription__header">
-        <h3 class="subcription__title">Абонементы</h3>
-          <ul class="subscription__period-list">
-            <li class="subscription__period-item">1 месяц</li>
-            <li class="subscription__period-item">6 месяцев</li>
-            <li class="subscription__period-item">12 месяцев</li>
-          </ul>
+    <section class="subscription container">
+      <div class="subscription__wrapper">
+        <h2 class="visually-hidden">Абонементы</h2>
+        <div class="subscription__header">
+          <h3 class="subscription__title">Абонементы</h3>
+            <ul class="subscription__period-list">
+              <li class="subscription__period-item">1 месяц</li>
+              <li class="subscription__period-item">6 месяцев</li>
+              <li class="subscription__period-item">12 месяцев</li>
+            </ul>
+        </div>
+        <ul class="subscription__type-list">
+          <li class="subscription__type-item">
+            <h3>С тренером</h3>
+            <p class="subscription__type-subtitle">12 занятий</p>
+            <p class="subscription__type-price">5000 &#8381</p>
+            <a href="" class="subscription__type-button button">купить абонемент</a>
+          </li>
+          <li class="subscription__type-item">
+            <h3>Дневной</h3>
+            <p class="subscription__type-subtitle">с 8:00 до 17:00 </p>
+            <p class="subscription__type-price">1700 &#8381</p>
+            <a href="" class="subscription__type-button button">купить абонемент</a>
+          </li>
+          <li class="subscription__type-item type-item">
+            <h3>Полный день</h3>
+            <p class="subscription__type-subtitle">с 8:00 до 22:00 </p>
+            <p class="subscription__type-price">2700 &#8381</p>
+            <a href="" class="subscription__type-button button">купить абонемент</a>
+          </li>
+        </ul>
+        <img class="subscription__background" src="img/bg_1@1x.png" width="287" height="494" alt="">
       </div>
-      <ul class="subscription__type-list">
-        <li class="subscription__type-item">
-          <h3>С тренером</h3>
-          <p class="subscription__type-subtitle">12 занятий</p>
-          <p class="subscription__type-price">5000 &#8381</p>
-          <a href="" class="subscription__type-button button">купить абонемент</a>
-        </li>
-        <li class="subscription__type-item">
-          <h3>Дневной</h3>
-          <p class="subscription__type-subtitle">с 8:00 до 17:00 </p>
-          <p class="subscription__type-price">1700 &#8381</p>
-          <a href="" class="subscription__type-button button">купить абонемент</a>
-        </li>
-        <li class="subscription__type-item type-item">
-          <h3>Полный день</h3>
-          <p class="subscription__type-subtitle">с 8:00 до 22:00 </p>
-          <p class="subscription__type-price">2700 &#8381</p>
-          <a href="" class="subscription__type-button button">купить абонемент</a>
-        </li>
-      </ul>
-      <img class="subscription__background" src="img/bg_1@1x.png" width="287" height="494" alt="">
     </section>
 
-    <section class="promo">
+    <section class="promo container">
       <h2 class="visually-hidden">Промоакции</h2>
       <div class="promo__wrapper">
         <div class="promo__info-wrapper">
@@ -144,7 +147,7 @@
       </div>
     </section>
 
-    <section class="coach">
+    <section class="coach container">
       <h2 class="visually-hidden">Тренеры</h2>
       <div class="coach__wrapper">
         <h3>Тренеры</h3>
@@ -169,93 +172,95 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantages__wrapper">
         <h3>Наши преимущества</h3>
-        <div class="advantages__group">
-          <div class="advantages__item-number">
-            <h4>900</h4>
-            <p>кв/м</p>
+        <div class="advantages__wrapper-list">
+          <div class="advantages__group advantages__group--item1">
+            <div class="advantages__item-number">
+              <h4>900</h4>
+              <p>кв/м</p>
+            </div>
+            <div class="advantages__item-description">
+              <h4>Площадь</h4>
+              <p>Занимайтесь без очередей и толпучки</p>
+            </div>
+
+            <div class="advantages__item-number">
+              <h4>70</h4>
+              <p>машин</p>
+            </div>
+            <div class="advantages__item-description">
+              <h4>Собственная парковка</h4>
+              <p>Вы всегда найдете место для своей машины на нашей парковке </p>
+            </div>
           </div>
-          <div class="advantages__item-description">
-            <h4>Площадь</h4>
-            <p>Занимайтесь без очередей и толпучки</p>
+          <div class="advantages__group advantages__group--item2">
+            <div class="advantages__item-number">
+              <h4>350</h4>
+              <p>мест</p>
+            </div>
+            <div class="advantages__item-description">
+              <h4>Комфорт</h4>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+
+            <div class="advantages__item-number">
+              <h4>5+</h4>
+              <p>лет</p>
+            </div>
+            <div class="advantages__item-description">
+              <h4>Тренерский опыт</h4>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
           </div>
-        </div>
-        <div class="advantages__group">
-          <div class="advantages__item-number">
-            <h4>70</h4>
-            <p>машин</p>
+          <div class="advantages__block">
+              <h4>100</h4>
+              <p>Тренажеров</p>
+              <p class="advantages__block-description">Современные тренажеры на все группы мышц</p>
           </div>
-          <div class="advantages__item-description">
-            <h4>Собственная парковка</h4>
-            <p>Вы всегда найдете место для своей машины на нашей парковке </p>
-          </div>
-        </div>
-        <div class="advantages__group">
-          <div class="advantages__item-number">
-            <h4>350</h4>
-            <p>мест</p>
-          </div>
-          <div class="advantages__item-description">
-            <h4>Комфорт</h4>
-            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-          </div>
-        </div>
-        <div class="advantages__group">
-          <div class="advantages__item-number">
-            <h4>5+</h4>
-            <p>лет</p>
-          </div>
-          <div class="advantages__item-description">
-            <h4>Тренерский опыт</h4>
-            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-          </div>
-        </div>
-        <div class="advantages__block">
-            <h4>100</h4>
-            <p>Тренажеров</p>
-            <p class="advantages__block-description">Современные тренажеры на все группы мышц</p>
         </div>
       </div>
     </section>
 
-    <section class="action">
-      <h2 class="visually-hidden">Акции</h2>
+    <section class="action container">
       <div class="action__wrapper">
+        <h2 class="visually-hidden">Акции</h2>
         <h3>Акции</h3>
-        <div class="action__group">
-          <div class="action__part">
-            <h4>Год</h4>
-            <span>4999</span>
-            <p class="action__part-description">Безлимитный абонемент в тренажерный зал</p>
-            <a href="" class="">подробнее</a>
-          </div>
-          <img class="action__picture" src="img/desktop_action@1x.png" width="280" height="462" alt="">
+        <div class="action__group-wrapper">
+            <div class="action__group">
+              <div class="action__part">
+                <h4>Год</h4>
+                <span>4999</span>
+                <p class="action__part-description">Безлимитный абонемент в тренажерный зал</p>
+                <a href="" class="">подробнее</a>
+              </div>
+              <img class="action__picture" src="img/desktop_action@1x.png" width="280" height="462" alt="">
+            </div>
+          <ul class="action__list">
+            <li class="action__item">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a href="" class="">подробнее</a>
+            </li>
+            <li class="action__item">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a href="" class="">подробнее</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <ul class="action__list">
-        <li class="action__item">
-          <h3>Месяц бесплатно</h3>
-          <p>Приведи друга, получи абонемент в подарок</p>
-          <a href="" class="">подробнее</a>
-        </li>
-        <li class="action__item">
-          <h3>Скидка 20%</h3>
-          <p>Корпоративный фитнес с командой</p>
-          <a href="" class="">подробнее</a>
-        </li>
-      </ul>
     </section>
 
-    <section class="action">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <div class="action__wrapper">
+    <section class="review container">
+      <div class="review__wrapper">
+        <h2 class="visually-hidden">Отзывы</h2>
         <h3>Отзывы</h3>
-        <div class="action__group">
-          <img class="action__picture" src="img/desktop_review@1x.png" width="80" height="80" alt="">
-          <div class="action__item">
+        <div class="review__group">
+          <img class="review__picture" src="img/desktop_review@1x.png" width="80" height="80" alt="">
+          <div class="review__item">
             <h4>Анна Орлова</h4>
             <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
@@ -263,11 +268,11 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <div class="page-footer__first-row first-row">
          <div class="first-row__group">
-           <h3>БЕСПЛАТНОЕ занятие</h3>
+           <h3>Бесплатное занятие</h3>
            <ul class="first-row__user-info">
              <li>Имя</li>
              <li>Телефон</li>
@@ -282,12 +287,12 @@
                <p>г. Омск, ул. 60 лет Октября, 7</p>
              </li>
              <li class="first-row__contacts-item">
-               <h4>График работы:</h4>
-               <p>Пн-Вс: с 8:00 до 22:00</p>
-             </li>
-             <li class="first-row__contacts-item">
                <h4>Телефон:</h4>
                <p>8-800-555-55-55</p>
+             </li>
+             <li class="first-row__contacts-item">
+               <h4>График работы:</h4>
+               <p>Пн-Вс: с 8:00 до 22:00</p>
              </li>
              <li class="first-row__contacts-item">
                <h4>Email:</h4>

@@ -1,0 +1,50 @@
+
+.advert {
+  display: flex;
+  justify-content: space-between;
+
+  // &__wrapper {
+  // }
+
+  &__location {
+    margin: 0;
+  }
+
+  // &__header {
+  // }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  // &__subtitle-item {
+  // }
+
+  // &__button {
+  // }
+
+  &__pucture img {
+    display: block;
+  }
+
+  // &__social {
+  // }
+
+  &__social-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  // &__social-item {
+  // }
+
+  // &__social-link {
+  // }
+}

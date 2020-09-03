@@ -1,0 +1,18 @@
+.page-footer {
+  &__wrapper {
+    box-sizing: border-box; //
+    min-height: 445px; //
+
+    outline: 1px solid #000000;
+  }
+
+  &__first-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__second-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,45 @@
+.gym-hall {
+  &__wrapper {
+    box-sizing: border-box;
+    min-height: 756px; //
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 60px;
+
+    outline: 1px solid #000000;
+  }
+
+  &__promo {
+    max-width: 355px; //
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__pucture img {
+    display: block;
+  }
+
+  &__video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__video img {
+    display: block;
+  }
+}

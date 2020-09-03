@@ -1,0 +1,62 @@
+.action {
+  &__wrapper {
+    box-sizing: border-box; //
+    min-height: 801px; //
+    padding: 120px 0;
+
+    outline: 1px solid #000000;
+  }
+
+  &__wrapper h3 {
+    margin: 0;
+  }
+
+  &__group-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // &__part {
+  // }
+
+  &__part h4 {
+    margin: 0;
+  }
+
+  &__part span {
+    margin: 0;
+  }
+
+  &__part p {
+    margin: 0;
+  }
+
+  // &__part-description {
+  // }
+
+  &__picture {
+    display: block;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  // &__item {
+  // }
+
+  &__item h3 {
+    margin: 0;
+  }
+
+  &__item p {
+    margin: 0;
+  }
+}

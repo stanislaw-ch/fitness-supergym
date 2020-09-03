@@ -1,0 +1,64 @@
+.advantages {
+  &__wrapper {
+    box-sizing: border-box; //
+    min-height: 664px; //
+    padding: 120px 0;
+
+    outline: 1px solid #000000;
+  }
+
+  &__wrapper h3 {
+    margin: 0;
+  }
+
+  &__wrapper-list {
+    display: flex;
+  }
+
+  &__group {
+    &--item1 {
+      order: 1;
+    }
+
+    &--item2 {
+      order: 3;
+    }
+  }
+
+  // &__item-number {
+  // }
+
+  &__item-number h4 {
+    margin: 0;
+  }
+
+  &__item-number p {
+    margin: 0;
+  }
+
+  // &__item-description {
+  // }
+
+  &__item-description h4 {
+    margin: 0;
+  }
+
+  &__item-description p {
+    margin: 0;
+  }
+
+  &__block {
+    order: 2;
+  }
+
+  &__block h4 {
+    margin: 0;
+  }
+
+  &__block p {
+    margin: 0;
+  }
+
+  // &__block-description {
+  // }
+}

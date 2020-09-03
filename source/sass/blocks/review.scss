@@ -1,0 +1,38 @@
+.review {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    box-sizing: border-box; //
+    min-height: 461px; //
+    width: 560px;
+    padding-bottom: 120px;
+
+    outline: 1px solid #000000;
+  }
+
+  &__wrapper h3 {
+    margin: 0;
+  }
+
+  &__group {
+    min-height: 242px;
+    background-color: #1c3374;
+  }
+
+  // &__picture {
+
+  // }
+
+  // &__item {
+
+  // }
+
+  &__item h4 {
+    margin: 0;
+  }
+
+  &__item p {
+    margin: 0;
+  }
+}

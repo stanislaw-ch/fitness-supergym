@@ -1,0 +1,57 @@
+.promo {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box; //
+    min-height: 740px; //
+    padding: 120px 0;
+
+    outline: 1px solid #000000;
+  }
+
+  // &__info-wrapper {
+  // }
+
+  // &__header {
+  // }
+
+  &__title {
+    margin: 0;
+  }
+
+  // &__duration {
+  // }
+
+  // &__date {
+  // }
+
+  &__date-title {
+    margin: 0;
+  }
+
+  &__date-day {
+    margin: 0;
+  }
+
+  &__date-month {
+    margin: 0;
+  }
+
+  &__time {
+    margin: 0;
+  }
+
+  &__time-title {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  // &__button {
+  // }
+
+  // &__picture {
+  // }
+}

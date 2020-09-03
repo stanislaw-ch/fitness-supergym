@@ -1,0 +1,31 @@
+.page-header {
+  &__wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    outline: 1px solid #000000;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    outline: 1px solid #000000;
+  }
+
+  &__advert {
+    outline: 1px solid #000000;
+  }
+
+  // &__logo {
+  // }
+
+  // &__phone {
+  // }
+
+  // &__wrapper {
+  // }
+}

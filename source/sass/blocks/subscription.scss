@@ -1,0 +1,63 @@
+.subscription {
+  &__wrapper {
+    position: relative;
+    box-sizing: border-box; //
+    min-height: 851px; //
+    padding: 120px 0;
+
+    outline: 1px solid #000000;
+  }
+
+  &__header {
+    outline: 1px solid #000000;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__period-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  // &__period-item {
+  // }
+
+  &__type-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    outline: 1px solid #000000;
+  }
+
+  // &__type-item {
+  // }
+
+  &__type-item h3 {
+    margin: 0;
+  }
+
+  &__type-subtitle {
+    margin: 0;
+  }
+
+  &__type-price {
+    margin: 0;
+  }
+
+  // &__type-button {
+  // }
+
+  &__background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
