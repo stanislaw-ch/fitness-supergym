@@ -1,27 +1,42 @@
 .subscription {
+  background: #f8f9fc;
+
   &__wrapper {
     position: relative;
     box-sizing: border-box; //
     min-height: 851px; //
     padding: 120px 0;
-
-    outline: 1px solid #000000;
   }
 
   &__header {
-    outline: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__title {
-    margin: 0;
+    margin: 0 0 55px 0;
+
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
   }
 
   &__period-list {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
+    width: 341px;
+    margin: 0 0 40px 0;
+    padding: 0 0 20px 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(16, 38, 84, 0.5);
+
     list-style-type: none;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   }
 
   // &__period-item {
@@ -33,31 +48,70 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-
-    outline: 1px solid #000000;
   }
 
-  // &__type-item {
-  // }
+  &__type-item {
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 68px 77px;
+    width: 360px;
+
+    background: #ffffff;
+  }
 
   &__type-item h3 {
-    margin: 0;
+    margin: 0 0 20px 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
   }
 
   &__type-subtitle {
-    margin: 0;
+    margin: 0 0 95px 0;
+
+    color: #495a7d;
   }
 
   &__type-price {
-    margin: 0;
+    margin: 0 0 60px 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 150%;
+    color: #103aae;
   }
 
-  // &__type-button {
-  // }
+  &__type-price span {
+    color: #102654;
+  }
+
+  &__type-button {
+    display: block;
+    box-sizing: border-box;
+    width: 210px;
+    padding: 25px 45px;
+
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #102654;
+    border: 2px solid #102654;
+  }
 
   &__background {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -150px;
+    right: -100px;
+    z-index: 0;
   }
 }

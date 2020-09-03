@@ -1,32 +1,51 @@
 .gym-hall {
   &__wrapper {
+    position: relative;
     box-sizing: border-box;
     min-height: 756px; //
-    position: relative;
     display: flex;
     justify-content: space-between;
 
     padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 60px;
-
-    outline: 1px solid #000000;
   }
 
   &__promo {
     max-width: 355px; //
+    padding-top: 49px;
   }
 
   &__title {
-    margin: 0;
+    margin: 0 0 25px 0;
+
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 49px;
+    text-transform: uppercase;
+    line-height: 49px;
+    letter-spacing: 0.03em;
   }
 
   &__subtitle {
-    margin: 0;
+    margin: 0 0 55px 0;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
   }
 
   &__description {
     margin: 0;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  &__description:last-child {
+    margin-top: 10px;
   }
 
   &__pucture img {
@@ -35,8 +54,11 @@
 
   &__video {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 120px;
+    right: 360px;
+    z-index: 1;
+
+    background: rgba(20, 54, 122, 0.5);
   }
 
   &__video img {
