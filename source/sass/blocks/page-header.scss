@@ -1,9 +1,9 @@
 .page-header {
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
   &__wrapper {
     padding-top: 30px;
     padding-bottom: 50px;
-
-    outline: 1px solid #000000;
   }
 
   &__group {
@@ -12,19 +12,27 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-
-    outline: 1px solid #000000;
   }
 
-  &__advert {
-    outline: 1px solid #000000;
+  // &__advert {
+  // }
+
+  &__logo {
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
   }
 
-  // &__logo {
-  // }
-
-  // &__phone {
-  // }
+  &__phone {
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 
   // &__wrapper {
   // }
