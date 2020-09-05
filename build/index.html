@@ -151,6 +151,18 @@
       <h2 class="visually-hidden">Тренеры</h2>
       <div class="coach__wrapper">
         <h3>Тренеры</h3>
+        <button class="coach__slider-btn slider-btn slider-btn--next" type="button">
+          <span class="visually-hidden">Вперед</span>
+          <svg width="18" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+        <button class="coach__slider-btn slider-btn slider-btn--previous" type="button">
+          <span class="visually-hidden">Назад</span>
+          <svg width="18" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
         <ul class="coach__list">
           <li class="coach__item">
             <img class="coach__picture" src="img/desktop_coach1@1x.png" width="260" height="294" alt="">
@@ -172,9 +184,9 @@
       </div>
     </section>
 
-    <section class="advantages container">
+    <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper container">
         <h3>Наши преимущества</h3>
         <div class="advantages__wrapper-list">
           <div class="advantages__group advantages__group--item1">
@@ -186,7 +198,8 @@
               <h4>Площадь</h4>
               <p>Занимайтесь без очередей и толпучки</p>
             </div>
-
+          </div>
+          <div class="advantages__group advantages__group--item2">
             <div class="advantages__item-number">
               <h4>70</h4>
               <p>машин</p>
@@ -196,7 +209,7 @@
               <p>Вы всегда найдете место для своей машины на нашей парковке </p>
             </div>
           </div>
-          <div class="advantages__group advantages__group--item2">
+          <div class="advantages__group advantages__group--item3">
             <div class="advantages__item-number">
               <h4>350</h4>
               <p>мест</p>
@@ -205,7 +218,8 @@
               <h4>Комфорт</h4>
               <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </div>
-
+          </div>
+          <div class="advantages__group advantages__group--item4">
             <div class="advantages__item-number">
               <h4>5+</h4>
               <p>лет</p>
@@ -217,8 +231,8 @@
           </div>
           <div class="advantages__block">
               <h4>100</h4>
-              <p>Тренажеров</p>
-              <p class="advantages__block-description">Современные тренажеры на все группы мышц</p>
+              <p class="advantages__block-title">Тренажеров</p>
+              <p class="advantages__block-subtitle">Современные тренажеры на все группы мышц</p>
           </div>
         </div>
       </div>
@@ -233,8 +247,8 @@
               <div class="action__part">
                 <h4>Год</h4>
                 <span>4999</span>
-                <p class="action__part-description">Безлимитный абонемент в тренажерный зал</p>
-                <a href="" class="">подробнее</a>
+                <p>Безлимитный абонемент в тренажерный зал</p>
+                <a href="">подробнее</a>
               </div>
               <img class="action__picture" src="img/desktop_action@1x.png" width="280" height="462" alt="">
             </div>
@@ -258,6 +272,18 @@
       <div class="review__wrapper">
         <h2 class="visually-hidden">Отзывы</h2>
         <h3>Отзывы</h3>
+        <button class="review__slider-btn slider-btn slider-btn--next" type="button">
+          <span class="visually-hidden">Вперед</span>
+          <svg width="18" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+        <button class="review__slider-btn slider-btn slider-btn--previous" type="button">
+          <span class="visually-hidden">Назад</span>
+          <svg width="18" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
         <div class="review__group">
           <img class="review__picture" src="img/desktop_review@1x.png" width="80" height="80" alt="">
           <div class="review__item">
@@ -273,10 +299,16 @@
       <div class="page-footer__first-row first-row">
          <div class="first-row__group">
            <h3>Бесплатное занятие</h3>
-           <ul class="first-row__user-info">
-             <li>Имя</li>
-             <li>Телефон</li>
-           </ul>
+           <div class="first-row__user-info">
+             <div class="first-row__user-info-wrapper">
+              <label class="first-row__label" for="name">Имя</label>
+              <input class="first-row__input" id="name" type="text" name="name" placeholder="">
+            </div>
+            <div class="first-row__user-info-wrapper">
+              <label class="first-row__label" for="phone">Телефон</label>
+              <input class="first-row__input" id="phone" type="tel" name="phone" placeholder="">
+            </div>
+           </div>
            <a class="first-row__link" href="#">отправить</a>
          </div>
          <div class="first-row__group">
@@ -323,26 +355,26 @@
         <ul class="second-row__social">
           <li class="second-row__social-item">
             <a class="second-row__social-link" href="#">
-              <span class="visually-hidden">facebook</span>
-              <!-- <svg width="17.5" height="14.663">
-                <use xlink:href="#icon-twitter"></use>
-              </svg> -->
-            </a>
-          </li>
-          <li class="second-row__social-item">
-            <a class="second-row__social-link" href="#">
               <span class="visually-hidden">vkontakte</span>
-              <!-- <svg width="17.5" height="14.663">
-                <use xlink:href="#icon-twitter"></use>
-              </svg> -->
+              <svg width="24" height="13">
+                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="second-row__social-item">
             <a class="second-row__social-link" href="#">
               <span class="visually-hidden">instagram</span>
-              <!-- <svg width="17.5" height="14.663">
-                <use xlink:href="#icon-twitter"></use>
-              </svg> -->
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#icon-ig"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="second-row__social-item">
+            <a class="second-row__social-link" href="#">
+              <span class="visually-hidden">facebook</span>
+              <svg width="12" height="24">
+                <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>

@@ -1,14 +1,16 @@
 .action {
   &__wrapper {
-    box-sizing: border-box; //
-    min-height: 801px; //
     padding: 120px 0;
-
-    outline: 1px solid #000000;
   }
 
-  &__wrapper h3 {
-    margin: 0;
+  &__wrapper > h3 {
+    margin: 0 0 62px 0;
+
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-align: center;
   }
 
   &__group-wrapper {
@@ -21,42 +23,109 @@
     justify-content: space-between;
   }
 
-  // &__part {
-  // }
+  &__group img {
+    display: block;
+  }
+
+  &__part {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 280px;
+    padding: 45px;
+
+    color: #ffffff;
+
+    background-color: #ed0233;
+  }
 
   &__part h4 {
-    margin: 0;
+    margin: 0 0 20px 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 100%;
   }
 
   &__part span {
-    margin: 0;
+    display: inline-block;
+    margin: 0 0 35px 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 100%;
   }
 
   &__part p {
     margin: 0;
   }
 
-  // &__part-description {
-  // }
+  &__part a {
+    display: inline-block;
+    width: 79px;
+    padding-bottom: 3px;
+    margin-top: auto;
 
-  &__picture {
-    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    border-bottom: 1px solid #ffffff;
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 560px;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
 
-  // &__item {
-  // }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 211px;
+    padding: 35px;
+
+    border: 7px solid #2e35ac;
+  }
 
   &__item h3 {
-    margin: 0;
+    margin: 0 0 15px 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    color: #1c3374;
   }
 
   &__item p {
     margin: 0;
+  }
+
+  &__item a {
+    width: 69px;
+    padding-bottom: 3px;
+    margin-top: auto;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1c3374;
+
+    border-bottom: 1px solid #1c3374;
   }
 }

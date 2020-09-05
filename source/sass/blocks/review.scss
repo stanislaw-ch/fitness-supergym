@@ -3,33 +3,48 @@
   justify-content: center;
 
   &__wrapper {
-    box-sizing: border-box; //
-    min-height: 461px; //
+    position: relative;
     width: 560px;
     padding-bottom: 120px;
-
-    outline: 1px solid #000000;
   }
 
   &__wrapper h3 {
-    margin: 0;
+    margin: 0 0 62px 0;
+
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  &__slider-btn {
+    top: 225px;
   }
 
   &__group {
-    min-height: 242px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 62px;
     background-color: #1c3374;
   }
 
-  // &__picture {
+  &__picture {
+    height: 80px;
+    margin-right: 25px;
+  }
 
-  // }
-
-  // &__item {
-
-  // }
+  &__item {
+    color: #ffffff;
+  }
 
   &__item h4 {
-    margin: 0;
+    margin: 0 0 25px 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   &__item p {

@@ -1,8 +1,16 @@
 .second-row {
+  display: flex;
+  align-items: center;
   min-height: 108px;
 
   & p {
     margin: 0;
+
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
   }
 
   &__nav-list {
@@ -12,18 +20,34 @@
     list-style-type: none;
   }
 
-  // &__nav-item {
-  // }
+  &__nav-item {
+    margin-right: 40px;
+  }
+
+  &__nav-item:last-of-type {
+    margin-right: 0;
+  }
+
+  &__nav-item a {
+
+    color: #ffffff;
+  }
 
   &__social {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
 
-  // &__social-item {
-  // }
+  &__social-item {
+    margin-right: 25px;
+  }
+
+  &__social-item:last-child {
+    margin-right: 0;
+  }
 
   // &__social-link {
   // }

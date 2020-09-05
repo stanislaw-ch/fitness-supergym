@@ -1,0 +1,17 @@
+.slider-btn {
+  position: absolute;
+  // width: 18px;
+  // height: 34px;
+
+  background: transparent;
+  border: hidden;
+  cursor: pointer;
+
+  &--previous {
+    left: -40px;
+  }
+
+  &--next {
+    right: -40px;
+  }
+}
