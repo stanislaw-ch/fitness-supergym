@@ -1,22 +1,36 @@
 .first-row {
   min-height: 337px;
 
+  &__item {
+    display: flex;
+
+    &--left {
+      justify-content: flex-end;
+    }
+
+    &--right {
+      justify-content: flex-start;
+
+      border-top: 1px solid #74819c;
+    }
+  }
+
   &__group {
     box-sizing: border-box;
-    width: 50%;
+    width: 580px;
     padding: 70px 0;
-  }
 
-  &__group:first-child {
-    padding-right: 170px;
+    &--item-1 {
+      padding-right: 170px;
 
-    color: #ffffff;
+      color: #ffffff;
 
-    background-color: #102654;
-  }
+      background-color: #102654;
+    }
 
-  &__group:last-child {
-    padding-left: 120px;
+    &--item-2 {
+      padding-left: 120px;
+    }
   }
 
   &__group h3 {

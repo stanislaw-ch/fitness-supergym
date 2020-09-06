@@ -31,6 +31,61 @@
     position: relative;
   }
 
+  &__item:hover .coach__name {
+    display: none;
+  }
+
+  &__info {
+    position: absolute;
+    display: none;
+    box-sizing: border-box;
+    padding: 31px;
+
+    color: #ffffff;
+
+    background: rgba(16, 38, 84, 0.89);
+  }
+
+  &__info-name {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  &__info-subtitle {
+    margin: 0 0 26px 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150%;
+    color: #b6bdcc;
+  }
+
+  &__info-list {
+    width: 159px;
+  }
+
+  &__info-list li {
+    margin: 0 0 24px 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+
+    list-style: disc;
+  }
+
+  &__item:hover .coach__info {
+    display: block;
+  }
+
   &__picture {
     display: block;
   }

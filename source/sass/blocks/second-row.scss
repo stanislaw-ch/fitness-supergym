@@ -3,7 +3,7 @@
   align-items: center;
   min-height: 108px;
 
-  & p {
+  & > a {
     margin: 0;
 
     font-family: "Bebas Neue Regular", "Arial", sans-serif;
@@ -29,7 +29,9 @@
   }
 
   &__nav-item a {
-
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
     color: #ffffff;
   }
 

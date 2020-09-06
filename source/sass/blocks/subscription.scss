@@ -29,7 +29,7 @@
     justify-content: space-between;
     width: 341px;
     margin: 0 0 40px 0;
-    padding: 0 0 20px 0;
+    padding: 0;
 
     font-style: normal;
     font-weight: normal;
@@ -40,8 +40,16 @@
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   }
 
-  // &__period-item {
-  // }
+  &__period-item {
+    padding-bottom: 20px;
+  }
+
+  &__period-item:hover {
+    color: #102654;
+
+    cursor: pointer;
+    border-bottom: 2px solid #d10a42;
+  }
 
   &__type-list {
     display: flex;
@@ -60,8 +68,17 @@
     box-sizing: border-box;
     padding: 68px 77px;
     width: 360px;
+    height: 523px;
 
     background: #ffffff;
+
+    // &--active {
+    //   border: 7px solid #2e35ac;
+    // }
+  }
+
+  &__type-item:hover {
+    border: 7px solid #2e35ac;
   }
 
   &__type-item h3 {
@@ -80,6 +97,7 @@
   }
 
   &__type-price {
+    position: relative;
     margin: 0 0 60px 0;
 
     font-style: normal;
@@ -87,6 +105,36 @@
     font-size: 60px;
     line-height: 150%;
     color: #103aae;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -25px;
+      left: -15px;
+
+      font-size: 100px;
+      color: #e8e8e8;
+      opacity: 0.48;
+    }
+
+    &--item-1 {
+      &::before {
+        content: "5000";
+      }
+    }
+
+    &--item-2 {
+      &::before {
+        content: "1700";
+      }
+    }
+
+    &--item-3 {
+      &::before {
+        content: "2700";
+      }
+    }
   }
 
   &__type-price span {
@@ -97,17 +145,32 @@
     display: block;
     box-sizing: border-box;
     width: 210px;
-    padding: 25px 45px;
+    padding: 25px 0;
 
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
+    text-align: center;
     line-height: 14px;
     letter-spacing: 0.05em;
     color: #102654;
-    border: 2px solid #102654;
+    border: 2px solid #1c3374;
   }
+
+  &__type-item:hover .subscription__type-button {
+    color: #ffffff;
+
+    border: none;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+
+  // &__type-button:hover {
+  //   color: #ffffff;
+
+  //   border: none;
+  //   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  // }
 
   &__background {
     position: absolute;

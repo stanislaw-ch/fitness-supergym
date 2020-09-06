@@ -1,16 +1,49 @@
 .page-footer {
-  // &__wrapper {
+  &__wrapper {
+    background-color: #030a1a;
+  }
+
+  // &__list {
+  //   display: flex;
+  //   margin: 0;
+  //   padding: 0;
+  //   list-style: none;
+  // }
+
+  // &__list li {
+  //   width: 50%;
+  // }
+
+  // &__list li:first-child {
+  //   background-color: #102654;
+  // }
+
+  // &__list li:last-child {
+  //   background-color: #ffffff;
   // }
 
   &__first-row {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__first-row li {
+    width: 50%;
+  }
+
+  &__first-row > li:first-child {
+    background-color: #102654;
+  }
+
+  &__first-row > li:last-child {
+    background-color: #ffffff;
   }
 
   &__second-row {
     display: flex;
     justify-content: space-between;
-
-    background-color: #030a1a;
   }
 }
