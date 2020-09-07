@@ -1,0 +1,80 @@
+.timetable {
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+  }
+
+  &__list {
+    width: 100%;
+
+    // border-collapse: collapse;
+    border-spacing: 8px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #15367a;
+  }
+
+  &__cap-coll {
+    width: 148px;
+    height: 66px;
+
+    border: 3px solid #1c3374;
+    box-sizing: border-box;
+
+    &--hover {
+      color: #ffffff;
+      background-color: #ed0233;
+      border: none;
+    }
+  }
+
+  &__cap-row {
+    width: 65px;
+    height: 110px;
+
+    border: 3px solid #1c3374;
+    box-sizing: border-box;
+
+    &--hover {
+      color: #ffffff;
+      background-color: #ed0233;
+      border: none;
+    }
+  }
+
+  &__field {
+    text-align: center;
+    background-color: #f8f9fc;
+
+    &--active {
+      background-color: #ffffff;
+      border: 3px solid #1c3374;
+    }
+
+    &--hover {
+      background-color: #ffffff;
+      border: 3px solid #ed0233;
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      width: auto;
+      height: auto;
+      background-color: #ffffff;
+      border: 3px solid #ed0233;
+      box-sizing: border-box;
+    }
+  }
+}
