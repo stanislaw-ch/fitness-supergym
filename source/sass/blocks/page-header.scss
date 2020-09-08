@@ -37,3 +37,33 @@
   // &__wrapper {
   // }
 }
+
+@media (max-width: 1119px) {
+  .page-header {
+    background: conic-gradient(from 130.31deg at 26.03% 42.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+    &__wrapper {
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
+
+    &__advert {
+      margin-top: 25px;
+    }
+
+    &__logo a {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__phone {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}
+
+// @media (max-width: 767px) {
+//   .page-header {
+//   }
+// }

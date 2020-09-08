@@ -89,3 +89,61 @@
     display: block;
   }
 }
+
+@media (max-width: 1119px) {
+  .gym-hall {
+    &__wrapper {
+      align-items: center;
+      flex-direction: column;
+
+      padding-top: 100px;
+      padding-bottom: 83px;
+      margin-bottom: 100px;
+      padding-left: 0;
+    }
+
+    &__promo {
+      max-width: 515px;
+      margin-bottom: 50px;
+      padding-top: 0;
+
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    &__subtitle {
+      margin: 0 0 50px 0;
+    }
+
+    &__description:last-child {
+      display: none;
+    }
+
+    &__pucture img {
+      height: 345px; //
+    }
+
+    &__video {
+      bottom: 0;
+      right: 50%;
+
+      width: 266px; //
+      margin-right: -133px;
+    }
+
+    &__button {
+      width: 73px;
+      margin-left: -36px;
+      margin-top: -36px;
+    }
+  }
+}
+
+// @media (max-width: 767px) {
+//   .gym-hall {
+//   }
+// }

@@ -132,3 +132,72 @@
   // &__picture {
   // }
 }
+
+@media (max-width: 1119px) {
+  .promo {
+    &__wrapper {
+      padding: 100px 0;
+      min-height: 292px;
+    }
+
+    &__info-wrapper {
+      box-sizing: border-box;
+      min-width: 292px;
+      padding: 50px 45px;
+    }
+
+    &__header {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      width: 120px;
+      font-size: 52px;
+      line-height: 52px;
+    }
+
+    &__date-title {
+      width: 42px;
+      font-size: 12px;
+    }
+
+    &__date-day {
+      font-size: 24px;
+    }
+
+    &__date-month {
+      width: 26px;
+      font-size: 10px;
+    }
+
+    &__time span {
+      font-size: 24px;
+    }
+
+    &__time-title {
+      width: 58px;
+      font-size: 12px;
+    }
+
+    &__description {
+      font-size: 12px;
+    }
+
+    &__button {
+      margin-top: 0;
+      padding: 16px 0;
+
+      font-size: 10px;
+    }
+
+    &__picture {
+      max-width: 386px;
+      max-height: 292px;
+    }
+  }
+}
+
+// @media (max-width: 767px) {
+//   .promo {
+//   }
+// }

@@ -1,7 +1,19 @@
 .container {
   box-sizing: border-box;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@media (max-width: 1119px) {
+  .container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .container {
+//   }
+// }
