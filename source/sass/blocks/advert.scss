@@ -115,6 +115,7 @@
 @media (max-width: 1119px) {
   .advert {
     &__wrapper {
+      padding-top: 0;
       margin-right: 30px;
     }
 
@@ -152,8 +153,8 @@
       display: none;
     }
 
-    &__pucture {
-      width: 324px;
+    &__pucture img {
+      max-width: 324px;
     }
   }
 }

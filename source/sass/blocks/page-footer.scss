@@ -47,3 +47,26 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 1119px) {
+  .page-footer {
+    &__first-row {
+
+      flex-direction: column;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   margin: 0;
+    //   padding: 0;
+    //   list-style: none;
+    }
+
+    &__first-row li {
+      width: 100%;
+    }
+  }
+}
+
+// @media (max-width: 767px) {
+//   .page-footer {
+//   }
+// }

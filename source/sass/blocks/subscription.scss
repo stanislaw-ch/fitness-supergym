@@ -216,10 +216,14 @@
       min-height: 448px; //
     }
 
+    &__type-item:last-child {
+      margin-bottom: 0;
+    }
+
     &__background {
       position: absolute;
       bottom: -105px;
-      right: 80px;
+      right: 0;
       z-index: 0;
     }
   }
