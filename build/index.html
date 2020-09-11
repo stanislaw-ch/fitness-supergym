@@ -33,13 +33,7 @@
         </div>
         <div class="advert__pucture">
           <picture>
-            <!-- 1х: 1200px; 2x: 2400px -->
-            <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/slide_mobile_1@1x.webp 1x, img/slide_mobile_1@2x.webp 2x"> -->
-            <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/slide_tablet_1@1x.webp 1x, img/slide_tablet_1@2x.webp 2x">
-            <source type="image/webp" srcset="img/slide_desktop_1@1x.webp 1x, img/slide_desktop_1@2x.webp 2x"> -->
-            <!-- <source srcset="img/slide_mobile_1@1x.jpg 1x, img/slide_mobile_1@2x.jpg 2x" media="(max-width: 767px)"> -->
             <source srcset="img/promo1_tablet@1x.png 1x, img/promo1_tablet@2x.png 2x" media="(max-width: 1119px)">
-
             <img src="img/promo1_desktop@1x.png" srcset="img/promo1_desktop@2x.png 2x" width="500" height="556" alt="">
           </picture>
         </div>
@@ -80,12 +74,14 @@
         </div>
         <div class="gym-hall__pucture">
           <picture>
+            <source srcset="img/promo2_mobile@1x.png 1x, img/promo2_mobile@2x.png 2x" media="(max-width: 767px)">
             <source srcset="img/promo2_tablet@1x.png 1x, img/promo2_tablet@2x.png 2x" media="(max-width: 1119px)">
             <img src="img/promo2_desktop@1x.png" srcset="img/promo2_desktop@2x.png 2x" width="660" height="401" alt="">
           </picture>
         </div>
         <div class="gym-hall__video">
           <picture>
+            <source srcset="img/promo3_mobile@1x.png 1x, img/promo3_mobile@2x.png 2x" media="(max-width: 767px)">
             <source srcset="img/promo3_tablet@1x.png 1x, img/promo3_tablet@2x.png 2x" media="(max-width: 1119px)">
             <img src="img/promo3_desktop@1x.png" srcset="img/promo3_desktop@2x.png 2x" width="364" height="228" alt="">
           </picture>
@@ -160,6 +156,7 @@
           <a href="" class="promo__button button">заполнить заявку</a>
         </div>
         <picture>
+          <source srcset="img/event_mobile@1x.png 1x, img/event_mobile@2x.png 2x" media="(max-width: 767px)">
           <source srcset="img/event_tablet@1x.png 1x, img/event_tablet@2x.png 2x" media="(max-width: 1119px)">
           <img class="promo__picture" src="img/event_desktop@1x.png" srcset="img/event_desktop@2x.png 2x" width="660" height="500" alt="">
         </picture>
@@ -226,6 +223,7 @@
               </ul>
             </div>
             <picture>
+              <source srcset="img/coach3_mobile@1x.png 1x, img/coach3_mobile@2x.png 2x" media="(max-width: 767px)">
               <source srcset="img/coach3_tablet@1x.png 1x, img/coach3_tablet@2x.png 2x" media="(max-width: 1119px)">
               <img class="coach__picture" src="img/coach3_desktop@1x.png" srcset="img/coach3_desktop@2x.png 2x" width="260" height="294" alt="">
             </picture>
@@ -318,6 +316,7 @@
                 <a href="">подробнее</a>
               </div>
               <picture>
+                <source srcset="img/action_mobile@1x.png 1x, img/action_mobile@2x.png 2x" media="(max-width: 767px)">
                 <source srcset="img/action_tablet@1x.png 1x, img/action_tablet@2x.png 2x" media="(max-width: 1119px)">
                 <img class="action__picture" src="img/action_desktop@1x.png" srcset="img/action_desktop@2x.png 2x" width="280" height="462" alt="">
               </picture>
@@ -355,8 +354,8 @@
           </svg>
         </button>
         <div class="review__group">
-          <img class="review__picture" src="img/review_desktop@1x.png" width="80" height="80" alt="">
           <div class="review__item">
+            <img class="review__picture" src="img/review_desktop@1x.png" width="80" height="80" alt="">
             <h4>Анна Орлова</h4>
             <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
@@ -410,8 +409,11 @@
 
 
       <div class="page-footer__second-row second-row container">
-        <a href="#">Supergym</a>
+        <!-- <a href="#">Supergym</a> -->
         <ul class="second-row__nav-list">
+          <li class="second-row__nav-item">
+            <a href="#">Supergym</a>
+          </li>
           <li class="second-row__nav-item">
             <a href="#">Услуги</a>
           </li>
@@ -430,15 +432,15 @@
         </ul>
         <ul class="second-row__social">
           <li class="second-row__social-item">
-            <a class="second-row__social-link" href="#">
+            <a class="second-row__social-link second-row__social-link--vkontakte" href="#">
               <span class="visually-hidden">vkontakte</span>
               <svg width="24" height="13">
                 <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li class="second-row__social-item">
-            <a class="second-row__social-link" href="#">
+          <li class="second-row__social-item ">
+            <a class="second-row__social-link second-row__social-link--instagram" href="#">
               <span class="visually-hidden">instagram</span>
               <svg width="24" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-ig"></use>
@@ -446,7 +448,7 @@
             </a>
           </li>
           <li class="second-row__social-item">
-            <a class="second-row__social-link" href="#">
+            <a class="second-row__social-link second-row__social-link--facebook" href="#">
               <span class="visually-hidden">facebook</span>
               <svg width="12" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-fb"></use>

@@ -24,6 +24,16 @@
     margin-right: 40px;
   }
 
+  &__nav-item:first-child {
+    margin: 0;
+
+    font-family: "Bebas Neue Regular", "Arial", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
   &__nav-item:last-of-type {
     margin-right: 0;
   }
@@ -109,7 +119,109 @@
   }
 }
 
-// @media (max-width: 767px) {
-//   .second-row {
-//   }
-// }
+@media (max-width: 767px) {
+  .second-row {
+    flex-direction: column;
+    // display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // min-height: 114px;
+
+    // & > a {
+    //   font-size: 24px;
+    //   line-height: 24px;
+    // }
+
+    &__nav-list {
+      // flex-direction: column;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    //   display: flex;
+    //   margin: 0;
+    //   padding: 0;
+    //   list-style-type: none;
+    }
+
+    &__nav-item {
+      margin-right: 0;
+      margin-bottom: 25px;
+      width: 50%;
+
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        order: 3;
+      }
+
+      &:nth-child(3) {
+        order: 5;
+        margin-bottom: 0;
+      }
+
+      &:nth-child(4) {
+        order: 2;
+      }
+
+      &:nth-child(5) {
+        order: 4;
+      }
+
+      &:nth-child(6) {
+        order: 6;
+        margin-bottom: 0;
+      }
+    }
+
+    &__nav-item:first-child a {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    // &__nav-item:last-of-type {
+    //   margin-right: 0;
+    // }
+
+    // &__nav-item a {
+    //   font-style: normal;
+    //   font-weight: normal;
+    //   font-size: 14px;
+    //   color: #ffffff;
+    // }
+
+    &__social {
+    //   display: flex;
+    //   align-items: center;
+    //   margin: 0;
+    //   padding: 0;
+    //   list-style-type: none;
+    }
+
+    // &__social-item {
+    //   margin-right: 25px;
+    // }
+
+    // &__social-item:last-child {
+    //   margin-right: 0;
+    // }
+
+    &__social-link {
+      &--vkontakte svg {
+        height: 17px;
+        width: 32px;
+      }
+
+      &--instagram svg {
+        height: 27px;
+        width: 27px;
+      }
+
+      &--facebook svg {
+        height: 27px;
+        width: 14px;
+      }
+    }
+  }
+}

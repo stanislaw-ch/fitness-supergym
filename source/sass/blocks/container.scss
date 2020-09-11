@@ -13,7 +13,9 @@
   }
 }
 
-// @media (max-width: 767px) {
-//   .container {
-//   }
-// }
+@media (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
