@@ -9,15 +9,16 @@
     padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 60px;
+    margin-bottom: 116px;
   }
 
   &__promo {
-    max-width: 355px; //
-    padding-top: 49px;
+    max-width: 360px; //
+    padding-top: 45px;
   }
 
   &__title {
-    margin: 0 0 25px 0;
+    margin: 0 0 11px 0;
 
     font-family: "Bebas Neue Regular", "Arial", sans-serif;
     font-size: 49px;
@@ -27,12 +28,11 @@
   }
 
   &__subtitle {
-    margin: 0 0 55px 0;
+    margin: 0 0 44px 0;
 
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 150%;
   }
 
   &__description {
@@ -41,10 +41,11 @@
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
+    line-height: 24px;
   }
 
   &__description:last-child {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   &__pucture img {
@@ -53,7 +54,7 @@
 
   &__video {
     position: absolute;
-    bottom: 120px;
+    bottom: 5px;
     right: 360px;
 
     background: rgba(20, 54, 122, 0.5);
@@ -80,17 +81,13 @@
     top: 50%;
     left: 50%;
 
-    margin-left: -50px;
+    margin-left: -55px;
     margin-top: -50px;
 
     background-color: transparent;
     border: none;
 
     cursor: pointer;
-  }
-
-  &__video img {
-    display: block;
   }
 }
 
@@ -108,19 +105,20 @@
 
     &__promo {
       max-width: 515px;
-      margin-bottom: 50px;
+      margin-bottom: 44px;
       padding-top: 0;
 
       text-align: center;
     }
 
     &__title {
+      margin-bottom: 13px;
       font-size: 42px;
       line-height: 42px;
     }
 
     &__subtitle {
-      margin: 0 0 50px 0;
+      margin: 0 0 36px 0;
     }
 
     &__description:last-child {
@@ -141,8 +139,8 @@
     }
 
     &__button {
-      width: 73px;
-      margin-left: -36px;
+      width: 82px;
+      margin-left: -42px;
       margin-top: -36px;
     }
   }
@@ -152,32 +150,29 @@
   .gym-hall {
     &__wrapper {
       position: relative;
-    //   align-items: center;
-    //   flex-direction: column;
+      align-items: flex-start;
 
-      padding-top: 70px;
+      padding-top: 65px;
       padding-bottom: 0;
       margin-bottom: 70px;
-    //   padding-left: 0;
     }
 
     &__promo {
-    //   max-width: 515px;
+      max-width: none;
       margin-bottom: 40px;
-      padding-bottom: 353px;
-    //   padding-top: 0;
+      padding-bottom: 347px;
 
       text-align: left;
     }
 
     &__title {
-      margin-bottom: 20px;
+      margin-bottom: 11px;
       font-size: 32px;
       line-height: 32px;
     }
 
     &__subtitle {
-      margin: 0 0 40px 0;
+      margin: 0 0 27px 0;
     }
 
     &__description {
@@ -186,6 +181,7 @@
 
     &__pucture {
       position: absolute;
+      left: -16px;
       bottom: 207px;
       width: 320px;
     }
@@ -197,7 +193,7 @@
 
     &__video {
       position: relative;
-      right: auto;
+      right: 16px;
 
       // padding-top: 353px;
       width: 320px; //
@@ -205,10 +201,8 @@
       margin-right: 0;
     }
 
-    // &__button {
-    //   width: 73px;
-    //   margin-left: -36px;
-    //   margin-top: -36px;
-    // }
+    &__button {
+      margin-left: -41px;
+    }
   }
 }

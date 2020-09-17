@@ -1,6 +1,4 @@
 .first-row {
-  // min-height: 337px;
-
   &__item {
     display: flex;
 
@@ -17,8 +15,8 @@
 
   &__group {
     box-sizing: border-box;
-    width: 580px;
-    padding: 70px 0;
+    width: 582px;
+    padding: 64px 0;
 
     &--item-1 {
       padding-right: 170px;
@@ -34,7 +32,7 @@
   }
 
   &__group h3 {
-    margin: 0 0 55px 0;
+    margin: 0 0 44px 0;
 
     font-family: "Bebas Neue Regular", "Arial", sans-serif;
     font-size: 49px;
@@ -57,9 +55,13 @@
     display: flex;
     justify-content: space-between;
     width: 190px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 
     border-bottom: 1px solid #74819c;
+  }
+
+  &__user-info-wrapper label {
+    padding-bottom: 4px;
   }
 
   &__user-info-wrapper input {
@@ -72,7 +74,7 @@
 
   &__link {
     display: block;
-    padding: 21px 0;
+    padding: 17px 0;
 
     font-style: normal;
     font-weight: bold;
@@ -94,29 +96,30 @@
     list-style-type: none;
   }
 
-  // &__contacts-item {
-  //   width: 229px;
-  // }
+  &__contacts-item {
+    padding-left: 5px;
+  }
 
   &__contacts-item:nth-child(1),
   &__contacts-item:nth-child(3) {
     width: 210px;
-    padding-right: 60px;
+    padding-right: 22px;
     border-right: 1px solid #74819c;
   }
 
   &__contacts-item:nth-child(2),
   &__contacts-item:nth-child(4) {
     width: auto;
-    margin-left: 60px;
+    margin-left: 51px;
   }
 
   &__contacts-item h4 {
-    margin: 0 0 15px 0;
+    margin: 0 0 4px 0;
   }
 
   &__contacts-item p {
-    margin: 0 0 30px 0;
+    margin: 0 0 18px 0;
+    font-size: 14px;
   }
 
   &__contacts-item:nth-child(3) p,
@@ -132,13 +135,14 @@
   .first-row {
     & li {
       box-sizing: border-box;
-      padding: 0 113px;
+      padding: 0 162px 0 133px;
     }
+
     &__item {
-    //   display: flex;
+      // display: flex;
 
       &--left {
-        justify-content: center;
+        justify-content: left;
       }
 
       &--right {
@@ -149,16 +153,10 @@
     }
 
     &__group {
-    //   box-sizing: border-box;
-    //   width: 580px;
-    //   padding: 70px 0;
+      padding: 67px 0 67px;
 
       &--item-1 {
         padding-right: 0;
-
-    //     color: #ffffff;
-
-    //     background-color: #102654;
       }
 
       &--item-2 {
@@ -167,29 +165,19 @@
     }
 
     &__group h3 {
-      margin: 0 0 50px 0;
+      margin: 0 0 43px 0;
 
       font-size: 42px;
       line-height: 42px;
     }
 
     // &__user-info {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   margin: 0;
-    //   padding: 0;
-    //   list-style-type: none;
     // }
 
-    // &__user-info-wrapper {
-    //   box-sizing: border-box;
-    //   display: flex;
-    //   justify-content: space-between;
-    //   width: 190px;
-    //   margin-bottom: 30px;
-
-    //   border-bottom: 1px solid #74819c;
-    // }
+    &__user-info-wrapper {
+      width: 207px;
+      margin-bottom: 28px;
+    }
 
     &__user-info-wrapper label {
       font-size: 14px;
@@ -197,37 +185,13 @@
     }
 
     // &__user-info-wrapper input {
-    //   box-sizing: border-box;
-    //   width: 160px;
-
-    //   background-color: #102654;
-    //   border: none;
     // }
 
     // &__link {
-    //   display: block;
-    //   padding: 21px 0;
-
-    //   font-style: normal;
-    //   font-weight: bold;
-    //   font-size: 14px;
-    //   line-height: 16px;
-    //   letter-spacing: 0.05em;
-    //   text-transform: uppercase;
-    //   text-align: center;
-    //   color: #ffffff;
-
-    //   border: 3px solid #ffffff;
     // }
 
-    &__contacts-list {
-      // justify-content: space-between;
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   margin: 0;
-    //   padding: 0;
-    //   list-style-type: none;
-    }
+    // &__contacts-list {
+    // }
 
     &__contacts-item {
       width: 100%;
@@ -235,28 +199,30 @@
 
     &__contacts-item:nth-child(1),
     &__contacts-item:nth-child(3) {
-      width: 229px;
+      width: 267px;
       padding-right: 48px;
       padding-left: 0;
-    //   border-right: 1px solid #74819c;
     }
 
     &__contacts-item:nth-child(2),
     &__contacts-item:nth-child(4) {
-      // width: auto;
       margin-left: 48px;
       padding: 0;
     }
 
+    &__contacts-item:nth-child(1),
+    &__contacts-item:nth-child(2) {
+      margin-bottom: 11px;
+    }
+
     &__contacts-item h4 {
-      // margin: 0 0 15px 0;
+      margin: 0 0 15px 0;
 
       font-size: 20px;
       line-height: 20px;
     }
 
     &__contacts-item p {
-      // margin: 0 0 30px 0;
 
       font-size: 18px;
       line-height: 18px;
@@ -264,7 +230,6 @@
 
     // &__contacts-item:nth-child(3) p,
     // &__contacts-item:nth-child(4) p {
-    //   margin-bottom: 0;
     // }
 
     // &__group {
@@ -275,46 +240,30 @@
 @media (max-width: 767px) {
   .first-row {
     & li {
-    //   box-sizing: border-box;
       padding: 0 15px;
-      // padding: 0;
     }
 
     // &__item {
-    //   padding: 0 15px;
-    //   display: flex;
-
-      // &--left {
-      //   justify-content: center;
-      // }
+    // &--left {
+    // }
 
     //   &--right {
-    //     justify-content: center;
-
-    //     border-top: none;
     //   }
     // }
 
     &__group {
-    //   box-sizing: border-box;
       width: 100%;
-    //   padding: 70px 0;
+      padding: 67px 0 67px;
 
-    // &--item-1 {
-    //   padding-right: 0;
+      // &--item-1 {
+      //   }
 
-    //     color: #ffffff;
-
-    //     background-color: #102654;
-    //   }
-
-    //   &--item-2 {
-    //     padding-left: 0;
-    //   }
+      //   &--item-2 {
+      //   }
     }
 
     &__group h3 {
-      margin: 0 0 50px 0;
+      margin: 0 0 44px 0;
 
       font-size: 32px;
       line-height: 32px;
@@ -322,105 +271,73 @@
 
     &__user-info {
       flex-direction: column;
-    //   display: flex;
-    //   justify-content: space-between;
-    //   margin: 0;
-    //   padding: 0;
-    //   list-style-type: none;
     }
 
     &__user-info-wrapper {
-    //   box-sizing: border-box;
-    //   display: flex;
-    //   justify-content: space-between;
       width: 100%;
-    //   margin-bottom: 30px;
-
-    //   border-bottom: 1px solid #74819c;
+      margin-bottom: 38px;
     }
 
     &__user-info-wrapper label {
       margin-right: 15px;
-    //   font-size: 14px;
-    //   line-height: 16px;
     }
 
     &__user-info-wrapper input {
-    //   box-sizing: border-box;
       width: 100%;
-
-    //   background-color: #102654;
-    //   border: none;
     }
 
     &__link {
       width: 100%;
       box-sizing: border-box;
-    //   display: block;
-    //   padding: 21px 0;
-
-    //   font-style: normal;
-    //   font-weight: bold;
-    //   font-size: 14px;
-    //   line-height: 16px;
-    //   letter-spacing: 0.05em;
-    //   text-transform: uppercase;
-    //   text-align: center;
-    //   color: #ffffff;
-
-    //   border: 3px solid #ffffff;
     }
 
     &__contacts-list {
       flex-direction: column;
-    // justify-content: space-between;
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   margin: 0;
-    //   padding: 0;
-    //   list-style-type: none;
     }
 
     // &__contacts-item {
-    //   width: 100%;
     // }
+
+    &__contacts-item:nth-child(1) {
+      order: 1;
+    }
+
+    &__contacts-item:nth-child(2) {
+      order: 3;
+    }
+
+    &__contacts-item:nth-child(3) {
+      order: 2;
+    }
+
+    &__contacts-item:nth-child(4) {
+      order: 4;
+    }
 
     &__contacts-item:nth-child(1),
     &__contacts-item:nth-child(3) {
       width: 100%;
       padding-right: 0;
-    //   padding-left: 0;
       border-right: none;
     }
 
     &__contacts-item:nth-child(2),
     &__contacts-item:nth-child(4) {
-      // width: auto;
       margin-left: 0;
-    //   padding: 0;
     }
 
     // &__contacts-item h4 {
-    //   // margin: 0 0 15px 0;
-
-    //   font-size: 20px;
-    //   line-height: 20px;
     // }
 
     // &__contacts-item p {
-      // margin: 0 0 30px 0;
-
-    //   font-size: 18px;
-    //   line-height: 18px;
     // }
 
     &__contacts-item:nth-child(3) p {
       margin-bottom: 30px;
     }
 
-    &__contacts-item:nth-child(4) p {
-    //   margin-bottom: 0;
-    }
+    // &__contacts-item:nth-child(4) p {
+    // }
 
     // &__group {
     // }

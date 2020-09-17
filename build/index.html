@@ -129,7 +129,7 @@
         </ul>
         <picture>
           <source srcset="img/bg_tablet@1x.png 1x, img/bg_tablet@2x.png 2x" media="(max-width: 1119px)">
-          <img class="subscription__background" src="img/bg_desktop.png" srcset="img/bg_desktop@2x.png 2x" width="287" height="494" alt="">
+          <img class="subscription__background" src="img/bg_desktop@1x.png" srcset="img/bg_desktop@2x.png 2x" width="287" height="494" alt="">
         </picture>
       </div>
     </section>
@@ -155,11 +155,13 @@
           <p class="promo__description">Ежегодные соревнования по CrossFit</p>
           <a href="" class="promo__button button">заполнить заявку</a>
         </div>
-        <picture>
-          <source srcset="img/event_mobile@1x.png 1x, img/event_mobile@2x.png 2x" media="(max-width: 767px)">
-          <source srcset="img/event_tablet@1x.png 1x, img/event_tablet@2x.png 2x" media="(max-width: 1119px)">
-          <img class="promo__picture" src="img/event_desktop@1x.png" srcset="img/event_desktop@2x.png 2x" width="660" height="500" alt="">
-        </picture>
+        <div class="promo__picture">
+          <picture>
+            <source srcset="img/event_mobile@1x.png 1x, img/event_mobile@2x.png 2x" media="(max-width: 767px)">
+            <source srcset="img/event_tablet@1x.png 1x, img/event_tablet@2x.png 2x" media="(max-width: 1119px)">
+            <img src="img/event_desktop@1x.png" srcset="img/event_desktop@2x.png 2x" width="660" height="500" alt="">
+          </picture>
+        </div>
       </div>
     </section>
 
