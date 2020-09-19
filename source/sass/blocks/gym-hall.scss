@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .gym-hall {
     &__wrapper {
       align-items: center;
@@ -150,7 +150,6 @@
   .gym-hall {
     &__wrapper {
       position: relative;
-      align-items: flex-start;
 
       padding-top: 65px;
       padding-bottom: 0;
@@ -159,6 +158,7 @@
 
     &__promo {
       max-width: none;
+      min-width: 290px;
       margin-bottom: 40px;
       padding-bottom: 347px;
 
@@ -181,19 +181,21 @@
 
     &__pucture {
       position: absolute;
-      left: -16px;
+      left: 50%;
       bottom: 207px;
+
       width: 320px;
+      margin-left: -160px;
     }
 
     &__pucture img {
       height: 313px;
-      // width: 320px;
+      width: 320px;
     }
 
     &__video {
       position: relative;
-      right: 16px;
+      right: 0;
 
       // padding-top: 353px;
       width: 320px; //

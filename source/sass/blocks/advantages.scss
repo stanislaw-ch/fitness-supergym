@@ -2,6 +2,9 @@
   background-color: #f8f9fc;
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box; //
     // min-height: 664px; //
     padding-top: 114px;
@@ -161,14 +164,17 @@
   }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .advantages {
     &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
       padding-top: 96px;
       padding-bottom: 94px;
     }
 
     &__wrapper h3 {
+      width: 100%;
       margin: 0 0 49px 0;
 
       font-size: 42px;
@@ -176,6 +182,8 @@
     }
 
     &__wrapper-list {
+      width: 668px;
+      margin: 0 auto;
       padding: 0;
     }
 
@@ -278,8 +286,9 @@
       line-height: 32px;
     }
 
-    // &__wrapper-list {
-    // }
+    &__wrapper-list {
+      width: 290px;
+    }
 
     &__group {
       flex-direction: column;

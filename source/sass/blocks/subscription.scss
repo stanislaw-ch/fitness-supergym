@@ -172,10 +172,6 @@
   }
 
   // &__type-button:hover {
-  //   color: #ffffff;
-
-  //   border: none;
-  //   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   // }
 
   &__background {
@@ -187,7 +183,7 @@
 }
 
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .subscription {
     &__wrapper {
       padding-top: 97px;
@@ -245,6 +241,7 @@
     &__wrapper {
       padding-top: 66px;
       padding-bottom: 70px;
+      max-width: 442px;
     }
 
     &__header {
@@ -260,6 +257,7 @@
 
     &__period-list {
       width: 100%;
+      max-width: 333px;
       height: 35px;
       margin: 0;
 

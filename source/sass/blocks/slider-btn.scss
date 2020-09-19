@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .slider-btn {
     &--previous {
       left: -38px;
@@ -29,11 +29,11 @@
 @media (max-width: 767px) {
   .slider-btn {
     &--previous {
-      left: -9px;
+      left: -38px;
     }
 
     &--next {
-      right: -9px;
+      right: -38px;
     }
   }
 }

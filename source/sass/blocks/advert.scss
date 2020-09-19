@@ -113,7 +113,7 @@
   }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .advert {
     &__wrapper {
       padding-top: 48px;
@@ -155,6 +155,7 @@
 @media (max-width: 767px) {
   .advert {
     &__wrapper {
+      width: 290px;
       margin-right: 0;
     }
 

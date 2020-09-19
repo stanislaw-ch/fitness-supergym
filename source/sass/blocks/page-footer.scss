@@ -1,5 +1,6 @@
 .page-footer {
   &__wrapper {
+    display: flex;
     background-color: #030a1a;
   }
 
@@ -41,7 +42,7 @@
   }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .page-footer {
     &__first-row {
 

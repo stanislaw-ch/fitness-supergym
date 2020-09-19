@@ -2,6 +2,7 @@
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
   &__wrapper {
+    // box-sizing: border-box;
     padding-top: 29px;
     padding-bottom: 50px;
   }
@@ -38,13 +39,22 @@
   // }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .page-header {
     background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
     &__wrapper {
+      display: flex;
+      flex-direction: column;
+      // justify-content: flex-end;
+      align-items: flex-end;
+      max-width: 910px;
       padding-top: 38px;
       padding-bottom: 80px;
+    }
+
+    &__group {
+      width: 100%;
     }
 
     &__advert {
@@ -57,6 +67,7 @@
     }
 
     &__phone {
+      // margin-left: auto;
       font-size: 24px;
       line-height: 24px;
     }
@@ -68,11 +79,13 @@
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
     &__wrapper {
+      max-width: 566px;
       padding-top: 18px;
-      // padding-bottom: 80px;
+      // max-width: 320px;
     }
 
     &__advert {
+      max-width: 380px;
       margin-top: 22px;
     }
 

@@ -131,7 +131,7 @@
   // }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .first-row {
     & li {
       box-sizing: border-box;
@@ -153,6 +153,8 @@
     }
 
     &__group {
+      width: 472px;
+      margin: 0 auto;
       padding: 67px 0 67px;
 
       &--item-1 {
@@ -253,6 +255,7 @@
 
     &__group {
       width: 100%;
+      max-width: 472px;
       padding: 67px 0 67px;
 
       // &--item-1 {
