@@ -3,7 +3,6 @@
   justify-content: center;
 
   &__wrapper {
-    position: relative;
     width: 560px;
     padding-bottom: 120px;
   }
@@ -19,7 +18,7 @@
   }
 
   &__slider-btn {
-    top: 208px;
+    top: 102px;
 
     &--previous {
       left: -65px;
@@ -28,6 +27,10 @@
     &--next {
       right: -65px;
     }
+  }
+
+  &__group-wrapper {
+    position: relative;
   }
 
   &__group {
@@ -87,9 +90,8 @@
       line-height: 42px;
     }
 
-    &__slider-btn {
-      top: 188px;
-    }
+    // &__slider-btn {
+    // }
 
     &__group {
       padding: 59px 64px 57px;
@@ -131,7 +133,7 @@
     }
 
     &__slider-btn {
-      top: 235px;
+      top: 158px;
 
       & svg {
         width: 10px;
@@ -147,9 +149,14 @@
       }
     }
 
+    &__group-wrapper {
+      width: 290px;
+    }
+
     &__group {
       justify-content: space-between;
       width: 226px;
+      margin: 0 auto;
       padding: 40px 25px 34px;
     }
 
