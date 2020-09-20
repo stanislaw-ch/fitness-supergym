@@ -20,6 +20,14 @@
 
   &__slider-btn {
     top: 208px;
+
+    &--previous {
+      left: -65px;
+    }
+
+    &--next {
+      right: -65px;
+    }
   }
 
   &__group {
@@ -27,6 +35,10 @@
     box-sizing: border-box;
     padding: 58px 62px 60px 62px;
     background-color: #1c3374;
+  }
+
+  &__group--hidden {
+    display: none;
   }
 
   &__item {
@@ -119,7 +131,20 @@
     }
 
     &__slider-btn {
-      top: 227px;
+      top: 235px;
+
+      & svg {
+        width: 10px;
+        height: 19px;
+      }
+
+      &--previous {
+        left: -7px;
+      }
+
+      &--next {
+        right: -7px;
+      }
     }
 
     &__group {

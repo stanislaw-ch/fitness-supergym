@@ -99,7 +99,9 @@
     min-height: 211px;
     padding: 24px 27px 27px;
 
-    border: 7px solid #2e35ac;
+    border: 7px solid transparent;
+    border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+    border-image-slice: 7;
   }
 
   &__item h3 {

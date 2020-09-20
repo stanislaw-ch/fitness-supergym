@@ -4,36 +4,4 @@
   background: transparent;
   border: hidden;
   cursor: pointer;
-
-  &--previous {
-    left: -65px;
-  }
-
-  &--next {
-    right: -65px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .slider-btn {
-    &--previous {
-      left: -38px;
-    }
-
-    &--next {
-      right: -38px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .slider-btn {
-    &--previous {
-      left: -38px;
-    }
-
-    &--next {
-      right: -38px;
-    }
-  }
 }

@@ -46,13 +46,19 @@
   &__period-item {
     padding-bottom: 20px;
     margin-bottom: -2px;
-  }
 
-  &__period-item:hover {
-    color: #102654;
+    &:hover {
+      color: #102654;
 
-    cursor: pointer;
-    border-bottom: 2px solid #d10a42;
+      cursor: pointer;
+      border-bottom: 2px solid #d10a42;
+    }
+
+    &--active {
+      color: #102654;
+
+      border-bottom: 2px solid #d10a42;
+    }
   }
 
   &__type-list {
@@ -62,6 +68,10 @@
     padding: 0;
 
     list-style-type: none;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   &__type-item {
@@ -84,7 +94,9 @@
 
   &__type-item:hover {
     padding: 57px 70px;
-    border: 7px solid #2e35ac;
+    border: 7px solid transparent;
+    border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+    border-image-slice: 7;
   }
 
   &__type-item h3 {

@@ -1,5 +1,7 @@
 .timetable {
   margin: 0 auto;
+  padding-bottom: 80px;
+
   &__header {
     display: flex;
     justify-content: center;
@@ -85,6 +87,12 @@
       box-sizing: border-box;
     }
   }
+
+  &__scroll {
+    &--hidden {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -100,14 +108,14 @@
     }
 
     &__list-wrapper {
-      max-width: 690px;
+      max-width: 683px;
       overflow: hidden;
       margin: 0 auto;
     }
 
     &__list {
       min-width: 1160px;
-      margin-left: -2px;
+      margin-left: -8px;
     }
 
     &__cap-coll {
@@ -118,6 +126,28 @@
     &__cap-row {
       width: 63px;
       height: 108px;
+    }
+
+    &__scroll {
+      width: 610px;
+      height: 4px;
+      margin-top: -4px;
+      margin-left: 70px;
+
+      background-color: #feebef;
+
+      &--hidden {
+        display: flex;
+      }
+    }
+
+    &__scroll-item {
+      width: 305px;
+      height: 4px;
+
+      &--active {
+        background-color: #ed0233;
+      }
     }
   }
 }
@@ -159,6 +189,12 @@
 
     &__field {
       &:nth-child(n + 3) {
+        display: none;
+      }
+    }
+
+    &__scroll {
+      &--hidden {
         display: none;
       }
     }
