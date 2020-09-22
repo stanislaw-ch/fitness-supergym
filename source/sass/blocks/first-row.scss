@@ -76,7 +76,10 @@
   &__user-info-wrapper input:hover,
   &__user-info-wrapper input:focus {
 
-    background-color: #ffffff;
+    font-size: 14px;
+    color: #ffffff;
+
+    outline: 2px solid #3ce93c;
   }
 
   &__button {
@@ -94,6 +97,12 @@
 
     border: 3px solid #ffffff;
     background-color: transparent;
+  }
+
+  &__button:hover {
+    color: #3ce93c;
+
+    border: 3px solid #3ce93c;
   }
 
   &__contacts-list {
@@ -128,6 +137,15 @@
   &__contacts-item p {
     margin: 0 0 18px 0;
     font-size: 14px;
+  }
+
+  &__contacts-item a {
+    font-size: 18px;
+    color: #102654;
+  }
+
+  &__contacts-item a:hover {
+    color: #d10a42;
   }
 
   &__contacts-item:nth-child(3) p,

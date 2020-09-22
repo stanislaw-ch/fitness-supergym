@@ -89,6 +89,12 @@
     border-bottom: 1px solid #ffffff;
   }
 
+  &__part a:hover {
+    color: #3ce93c;
+
+    border-bottom: 1px solid  #3ce93c;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -140,6 +146,12 @@
     color: #1c3374;
 
     border-bottom: 1px solid #1c3374;
+  }
+
+  &__item a:hover {
+    color: #d10a42;
+
+    border-bottom: 1px solid #d10a42;
   }
 }
 

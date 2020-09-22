@@ -4,4 +4,12 @@
   background: transparent;
   border: hidden;
   cursor: pointer;
+
+  & svg {
+    stroke: #afafaf;
+  }
+
+  &:hover svg {
+    stroke: #1c3374;
+  }
 }

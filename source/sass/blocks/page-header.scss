@@ -35,6 +35,11 @@
     color: #ffffff;
   }
 
+  &__phone a:hover,
+  &__logo a:hover {
+    color: #3ce93c;
+  }
+
   // &__wrapper {
   // }
 }
