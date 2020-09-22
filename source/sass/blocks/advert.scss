@@ -112,7 +112,7 @@
   // &__social-item {
   // }
 
-  &__social-link {
+  &__social-list a {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -120,6 +120,10 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #ffffff;
+  }
+
+  &__social-list a:hover {
+    color: #3ce93c;
   }
 }
 
