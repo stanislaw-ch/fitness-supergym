@@ -17,7 +17,7 @@
     margin-bottom: 38px;
   }
 
-  &__title {
+  &__header h3 {
     margin: 0 0 44px 0;
 
     font-family: "Bebas Neue Regular", "Arial", sans-serif;
@@ -108,7 +108,7 @@
     line-height: 29px;
   }
 
-  &__type-subtitle {
+  &__type-item p {
     margin: 0 0 66px 0;
 
     color: #495a7d;
@@ -186,7 +186,7 @@
   // &__type-button:hover {
   // }
 
-  &__background {
+  &__wrapper img {
     position: absolute;
     bottom: -149px;
     right: -84px;
@@ -206,7 +206,7 @@
       margin-bottom: 45px;
     }
 
-    &__title {
+    &__header h3 {
       margin: 0 0 35px 0;
 
       font-size: 42px;
@@ -236,7 +236,7 @@
       margin-bottom: 0;
     }
 
-    &__background {
+    &__wrapper img {
       position: absolute;
       bottom: -124px;
       right: 0;
@@ -260,7 +260,7 @@
       margin-bottom: 35px;
     }
 
-    &__title {
+    &__header h3 {
       margin: 0 0 25px 0;
 
       font-size: 32px;
@@ -295,7 +295,7 @@
       line-height: 24px;
     }
 
-    &__type-subtitle {
+    &__type-item p {
       margin-bottom: 55px;
     }
 
@@ -317,7 +317,7 @@
     // &__type-item:last-child {
     // }
 
-    &__background {
+    &__wrapper img {
       display: none;
     }
   }

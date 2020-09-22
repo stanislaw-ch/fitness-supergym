@@ -62,14 +62,21 @@
 
   &__user-info-wrapper label {
     padding-bottom: 4px;
+    margin-right: 10px;
   }
 
   &__user-info-wrapper input {
     box-sizing: border-box;
-    width: 160px;
+    width: 100%;
 
     background-color: #102654;
     border: none;
+  }
+
+  &__user-info-wrapper input:hover,
+  &__user-info-wrapper input:focus {
+
+    background-color: #ffffff;
   }
 
   &__button {
