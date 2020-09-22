@@ -69,6 +69,7 @@
     box-sizing: border-box;
     width: 100%;
 
+    color: #3ce93c;
     background-color: #102654;
     border: none;
   }
@@ -76,7 +77,6 @@
   &__user-info-wrapper input:hover,
   &__user-info-wrapper input:focus {
 
-    font-size: 14px;
     color: #ffffff;
 
     outline: 2px solid #3ce93c;
