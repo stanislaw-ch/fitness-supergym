@@ -26,7 +26,7 @@
     letter-spacing: 0.03em;
   }
 
-  &__promo p {
+  &__promo p:first-of-type {
     margin: 0 0 44px 0;
 
     font-style: normal;

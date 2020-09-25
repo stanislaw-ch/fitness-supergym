@@ -219,17 +219,17 @@
       <h2 class="visually-hidden">Тренеры</h2>
       <div class="coach__wrapper">
         <h3>Тренеры</h3>
-        <button class="coach__slider-btn coach__slider-btn--next slider-btn" type="button">
+        <button class="coach__slider-btn coach__slider-btn--next slider-btn slider-btn--next" type="button">
           <span class="visually-hidden">Вперед</span>
-          <svg width="18" height="34">
+          <!-- <svg width="18" height="34">
             <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-          </svg>
+          </svg> -->
         </button>
-        <button class="coach__slider-btn coach__slider-btn--previous slider-btn" type="button">
+        <button class="coach__slider-btn coach__slider-btn--previous slider-btn slider-btn--previous" type="button">
           <span class="visually-hidden">Назад</span>
-          <svg width="18" height="34">
+          <!-- <svg width="18" height="34">
             <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-          </svg>
+          </svg> -->
         </button>
         <ul class="coach__list">
           <li class="coach__item">
@@ -400,17 +400,11 @@
         <h3>Отзывы</h3>
 
         <div class="review__group-wrapper">
-          <button class="review__slider-btn review__slider-btn--next slider-btn " type="button">
+          <button class="review__slider-btn review__slider-btn--next slider-btn slider-btn--next" type="button">
             <span class="visually-hidden">Вперед</span>
-            <svg width="18" height="34">
-              <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-            </svg>
           </button>
-          <button class="review__slider-btn review__slider-btn--previous slider-btn" type="button">
+          <button class="review__slider-btn review__slider-btn--previous slider-btn slider-btn--previous" type="button">
             <span class="visually-hidden">Назад</span>
-            <svg width="18" height="34">
-              <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-            </svg>
           </button>
           <div class="review__group">
             <div class="review__item">
@@ -418,6 +412,14 @@
               <img src="img/review_desktop@1x.png" width="80" height="80" alt="Изображение блока с отзывами">
               <h4>Анна Орлова</h4>
               <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+          <div class="review__group review__group--hidden">
+            <div class="review__item">
+              <!-- 1х: 1200px; 2x: 2400px -->
+              <img src="img/review_desktop@1x.png" width="80" height="80" alt="Изображение блока с отзывами">
+              <h4>Жанна Орлова</h4>
+              <p>«Хожу в SuperClub уже больше года. Зал просторный, даже в вечернее время нет очередей. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.»</p>
             </div>
           </div>
           <div class="review__group review__group--hidden">

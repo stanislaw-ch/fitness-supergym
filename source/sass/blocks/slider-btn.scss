@@ -1,15 +1,103 @@
 .slider-btn {
   position: absolute;
 
+  width: 25px;
+  height: 37px;
   background: transparent;
   border: hidden;
   cursor: pointer;
 
-  & svg {
-    stroke: #afafaf;
+  &:hover::before,
+  &:hover::after {
+    background-color: #1c3374;
   }
 
-  &:hover svg {
-    stroke: #1c3374;
+  &::before,
+  &::after {
+    content: "";
+    left: -3px;
+    display: block;
+
+    width: 25px;
+    height: 1px;
+    background-color: #c4c4c4;
+  }
+
+  &--next {
+    &::before {
+      position: absolute;
+      top: 11px;
+      // left: 1px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      top: 29px;
+      // left: 1px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--previous {
+    &::before {
+      position: absolute;
+      top: 26px;
+      left: 5px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      top: 8px;
+      left: 5px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .slider-btn {
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-btn {
+    width: 15px;
+    height: 23px;
+
+    &::before,
+    &::after {
+      content: "";
+      left: 1px;
+
+      width: 14px;
+      height: 1px;
+    }
+
+    &--next {
+      &::before {
+        top: 6px;
+        // left: 1px;
+      }
+
+      &::after {
+        top: 16px;
+        // left: 1px;
+      }
+    }
+
+    &--previous {
+      &::before {
+        top: 16px;
+        // left: 1px;
+      }
+
+      &::after {
+        top: 6px;
+        // left: 1px;
+      }
+    }
   }
 }

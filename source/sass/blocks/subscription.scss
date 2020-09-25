@@ -108,7 +108,7 @@
     line-height: 29px;
   }
 
-  &__type-item p {
+  &__type-item p:first-of-type {
     margin: 0 0 66px 0;
 
     color: #495a7d;
@@ -295,7 +295,7 @@
       line-height: 24px;
     }
 
-    &__type-item p {
+    &__type-item p:first-of-type {
       margin-bottom: 55px;
     }
 

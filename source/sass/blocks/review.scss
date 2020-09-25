@@ -135,17 +135,17 @@
     &__slider-btn {
       top: 158px;
 
-      & svg {
-        width: 10px;
-        height: 19px;
-      }
+      // & svg {
+      //   width: 10px;
+      //   height: 19px;
+      // }
 
       &--previous {
-        left: -7px;
+        left: -2px;
       }
 
       &--next {
-        right: -7px;
+        right: -2px;
       }
     }
 
