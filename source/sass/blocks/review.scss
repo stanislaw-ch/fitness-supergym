@@ -33,11 +33,12 @@
     position: relative;
   }
 
+  &__slider-container {
+    overflow: hidden;
+  }
+
   &__group {
     display: flex;
-    box-sizing: border-box;
-    padding: 58px 62px 60px 62px;
-    background-color: #1c3374;
   }
 
   &__group--hidden {
@@ -46,11 +47,15 @@
 
   &__item {
     position: relative;
+    box-sizing: border-box;
 
-    padding-left: 108px;
+    min-width: 560px;
+    padding: 58px 62px 60px 170px;
     display: flex;
     flex-wrap: wrap;
     color: #ffffff;
+
+    background-color: #1c3374;
   }
 
   &__item h4 {
@@ -68,8 +73,8 @@
 
   &__item img {
     position: absolute;
-    top: 4px;
-    left: 0;
+    top: 62px;
+    left: 62px;
 
     display: block;
     height: 80px;

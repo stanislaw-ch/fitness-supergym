@@ -126,7 +126,7 @@
       line-height: 42px;
     }
 
-    &__promo p {
+    &__promo p:first-of-type {
       margin: 0 0 36px 0;
     }
 
@@ -185,7 +185,7 @@
       line-height: 32px;
     }
 
-    &__promo p {
+    &__promo p:first-of-type {
       margin: 0 0 27px 0;
     }
 
