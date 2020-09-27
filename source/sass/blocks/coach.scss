@@ -16,14 +16,14 @@
   }
 
   &__slider-btn {
-    top: 231px;
+    top: 232px;
 
     &--previous {
-      left: -65px;
+      left: -57px;
     }
 
     &--next {
-      right: -50px;
+      right: -54px;
     }
   }
 
@@ -136,7 +136,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1272px) {
   .coach {
     display: flex;
     justify-content: center;
@@ -211,7 +211,7 @@
 @media (max-width: 767px) {
   .coach {
     &__wrapper {
-      width: 298px;
+      width: 256px;
     }
   }
 }

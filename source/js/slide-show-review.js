@@ -13,6 +13,18 @@
   var itemWidth = container.clientWidth / slidesToShow;
   var movePosition = slidesToScroll * itemWidth;
 
+  var getClientWidth = function () {
+    if (document.body.clientWidth > 1200) {
+      itemWidth = container.clientWidth / slidesToShow;
+    }
+    if (document.body.clientWidth >= 768 && document.body.clientWidth < 1200) {
+      itemWidth = container.clientWidth / slidesToShow;
+    }
+    if (document.body.clientWidth < 768) {
+      itemWidth = container.clientWidth / slidesToShow;
+    }
+  };
+
   var setPosition = function () {
     track.style.transform = 'translateX(' + position + 'px)';
   };
@@ -41,4 +53,9 @@
   });
 
   checkBtns();
+  getClientWidth();
+
+  window.addEventListener('resize', function () {
+    getClientWidth();
+  });
 })();
