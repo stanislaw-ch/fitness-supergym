@@ -6,7 +6,7 @@
   // var tableCapRows = timeTable.querySelectorAll('.timetable__cap-row');
   var tableCapColls = timeTable.querySelectorAll('.timetable__cap-coll');
   // var tableColls = timeTable.querySelectorAll('.timetable__list td');
-  var tableRows = timeTable.querySelectorAll('tr');
+  // var tableRows = timeTable.querySelectorAll('tr');
 
   var unsetActiveFieldElement = function () {
     for (var j = 0; j < tableFields.length; j++) {
