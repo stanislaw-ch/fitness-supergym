@@ -124,8 +124,10 @@
     line-height: 150%;
     color: #103aae;
 
+    text-shadow: black 20em 0 0;
+
     &::before {
-      content: "";
+      content: attr(data-title);
       position: absolute;
       z-index: -1;
       top: -25px;
@@ -134,24 +136,6 @@
       font-size: 100px;
       color: #e8e8e8;
       opacity: 0.48;
-    }
-
-    &--item-1 {
-      &::before {
-        content: "5000";
-      }
-    }
-
-    &--item-2 {
-      &::before {
-        content: "1700";
-      }
-    }
-
-    &--item-3 {
-      &::before {
-        content: "2700";
-      }
     }
   }
 
