@@ -4,7 +4,7 @@
     justify-content: space-between;
     box-sizing: border-box; //
     // min-height: 740px; //
-    padding: 120px 0 114px 0;
+    padding: 119px 0 116px 0;
   }
 
   &__info-wrapper {
@@ -72,7 +72,7 @@
   &__date p:last-child {
     display: inline-block;
     width: 39px;
-    margin: 0 0 0 3px;
+    margin: -18px 0 0 4px;
 
     vertical-align: middle;
 
@@ -85,7 +85,7 @@
 
   &__time span {
     display: block;
-    margin: 0 0 5px;
+    margin: 0 0 7px;
 
     font-style: normal;
     font-weight: bold;
@@ -94,10 +94,10 @@
     color: #ffffff;
   }
 
-  &__time-title {
+  &__time p {
     width: 88px;
     padding-bottom: 7px;
-    margin: 0 0 4px 0;
+    margin: 0 0 3px 0;
 
     font-style: normal;
     font-weight: normal;
@@ -217,7 +217,7 @@
       line-height: 24px;
     }
 
-    &__time-title {
+    &__time p {
       width: 58px;
       padding-top: 2px;
       padding-bottom: 0;
@@ -252,7 +252,7 @@
   .promo {
     &__wrapper {
       flex-direction: column;
-      padding: 70px 0 65px;
+      padding: 69px 0 65px;
       margin: 0 auto;
       min-height: auto;
       max-width: 412px;
@@ -261,7 +261,7 @@
     &__info-wrapper {
       align-items: center;
       flex-direction: column;
-      padding: 45px 42px 49px;
+      padding: 43px 42px 48px 43px;
     }
 
     &__header-wrapper {
@@ -278,6 +278,22 @@
 
     &__header h3 {
       padding-top: 2px;
+    }
+
+    &__duration {
+      padding-top: 3px;
+    }
+
+    &__date p:first-child {
+      padding-bottom: 1px;
+    }
+
+    &__date span {
+      line-height: 29px;
+    }
+
+    &__date p:last-child {
+      margin: -8px 0 0 0;
     }
 
     //   &__date-title {

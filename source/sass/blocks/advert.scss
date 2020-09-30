@@ -8,12 +8,12 @@
     flex-direction: column;
     align-items: flex-end;
     width: 395px;
-    margin-right: 63px;
-    padding-top: 110px;
+    margin-right: 65px;
+    padding-top: 113px;
   }
 
   &__wrapper p {
-    margin: 0 0 9px 0;
+    margin: 0 0 6px 0;
 
     font-family: "Bebas Neue Regular", "Arial", sans-serif;
     font-size: 49px;
@@ -41,7 +41,7 @@
 
   &__subtitle-list {
     position: absolute;
-    bottom: 24px;
+    bottom: 22px;
     right: 264px;
 
     display: flex;
@@ -84,7 +84,7 @@
   &__pucture {
     width: 500px;
     height: 556px;
-    margin-top: -5px;
+    margin-top: -4px;
     margin-right: auto;
 
     background-color: #3a4b70;
@@ -96,14 +96,14 @@
 
   &__social {
     margin-top: auto;
-    margin-bottom: 45px;
+    margin-bottom: 39px;
   }
 
   &__social-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 81px;
+    height: 88px;
     margin: 0;
     padding: 0;
     list-style-type: none;

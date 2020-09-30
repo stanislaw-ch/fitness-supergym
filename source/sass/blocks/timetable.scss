@@ -114,14 +114,23 @@
     }
 
     &__list-wrapper {
+      // position: relative;
       // max-width: 683px;
       margin: 0 auto;
     }
 
     &__list {
+      // position: relative;
       // min-width: 1160px;
+      // padding-left: 100px;
       margin-left: -8px;
     }
+
+    // &__list tr .timetable__cap-row {
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    // }
 
     &__cap-coll {
       min-width: 145px;
@@ -147,8 +156,12 @@
     }
 
     &__scroll-item {
+      z-index: 1;
       width: 305px;
       height: 4px;
+
+      border: none;
+      background-color: transparent;
 
       &:hover {
         background-color: #ed0233;

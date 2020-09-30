@@ -20,7 +20,7 @@
     if (document.body.clientWidth >= 768 && document.body.clientWidth < 1200) {
       itemWidth = container.clientWidth / slidesToShow;
     }
-    if (document.body.clientWidth < 768) {
+    if (document.body.clientWidth <= 767) {
       itemWidth = container.clientWidth / slidesToShow;
     }
   };

@@ -5,8 +5,48 @@
   var tableFields = timeTable.querySelectorAll('.timetable__field');
   // var tableCapRows = timeTable.querySelectorAll('.timetable__cap-row');
   var tableCapColls = timeTable.querySelectorAll('.timetable__cap-coll');
-  // var tableColls = timeTable.querySelectorAll('.timetable__list td');
-  // var tableRows = timeTable.querySelectorAll('tr');
+  var tableColls = timeTable.querySelector('.timetable__field');
+  var tableRows = timeTable.querySelector('tr');
+
+  var position = 0;
+  var itemsCount = tableFields.length / 4;
+  var itemWidth = tableRows.clientWidth - 66 + 16;
+  var movePosition = 308;
+
+  console.log(movePosition);
+
+  var btnPrev = document.querySelector('.timetable__scroll-item--prev');
+  var btnNext = document.querySelector('.timetable__scroll-item--next');
+
+  var setPosition = function () {
+    timeTable.style.transform = 'translateX(' + position + 'px)';
+  };
+
+  btnNext.addEventListener('click', function () {
+    // var itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+
+    position -= movePosition;
+
+    btnNext.classList.add('timetable__scroll-item--active');
+    btnPrev.classList.remove('timetable__scroll-item--active');
+
+    setPosition();
+    // checkBtns();
+  });
+
+  btnPrev.addEventListener('click', function () {
+    // var itemsLeft = Math.abs(position) / itemWidth;
+
+    position += movePosition;
+
+    btnPrev.classList.add('timetable__scroll-item--active');
+    btnNext.classList.remove('timetable__scroll-item--active');
+
+    setPosition();
+    // checkBtns();
+  });
+
+
 
   var unsetActiveFieldElement = function () {
     for (var j = 0; j < tableFields.length; j++) {
@@ -63,10 +103,4 @@
     onClickChange(tableFields[j]);
     onHoverRowChange(tableFields[j]);
   }
-
-  // Передает элемент таба по клику
-  // for (var i = 0; i < tableRow.length; i++) {
-  //   onHoverChange(tableRow[i]);
-  //   onHoverChange(tableField[j], j);
-  // }
 })();

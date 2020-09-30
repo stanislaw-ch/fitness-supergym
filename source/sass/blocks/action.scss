@@ -4,7 +4,7 @@
   }
 
   &__wrapper > h3 {
-    margin: 0 0 56px 0;
+    margin: 0 0 55px 0;
 
     font-family: "Bebas Neue Regular", "Arial", sans-serif;
     font-size: 49px;
@@ -37,7 +37,7 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 280px;
-    padding: 43px 35px 44px 43px;
+    padding: 40px 35px 46px 45px;
 
     color: #ffffff;
 
@@ -55,14 +55,14 @@
 
   &__part span {
     display: inline-block;
-    margin: 0 0 21px 0;
+    margin: 0 0 18px 0;
 
     vertical-align: middle;
 
     font-style: normal;
     font-weight: bold;
     font-size: 70px;
-    line-height: 70px;
+    line-height: 75px;
   }
 
   &__part p {
@@ -74,7 +74,7 @@
   &__part a {
     display: inline-block;
     width: 79px;
-    padding-bottom: 2px;
+    // padding-bottom: 2px;
     margin-top: auto;
 
     vertical-align: middle;
@@ -160,11 +160,11 @@
     &__wrapper {
       width: 678px;
       margin: 0 auto;
-      padding: 96px 0;
+      padding: 94px 0 96px;
     }
 
     &__wrapper > h3 {
-      margin: 0 0 45px 0;
+      margin: 0 0 47px 0;
 
       font-size: 42px;
       line-height: 42px;
@@ -234,7 +234,7 @@
     }
 
     &__wrapper > h3 {
-      margin: 0 0 46px 0;
+      // margin: 0 0 44px 0;
 
       font-size: 32px;
       line-height: 32px;

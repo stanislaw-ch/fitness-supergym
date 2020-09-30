@@ -7,12 +7,12 @@
     justify-content: center;
     box-sizing: border-box; //
     // min-height: 664px; //
-    padding-top: 114px;
+    padding-top: 116px;
     padding-bottom: 120px;
   }
 
   &__wrapper h3 {
-    margin: 0 0 74px 0;
+    margin: 0 0 72px 0;
 
     font-family: "Bebas Neue Regular", "Arial", sans-serif;
     font-size: 49px;
@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding: 0 60px;
+    padding: 0 61px;
   }
 
   &__group {
@@ -59,6 +59,11 @@
       position: absolute;
       order: 4;
       bottom: -6px;
+      left: 55px;
+
+      & .advantages__item-number h4 {
+        margin-right: 28px;
+      }
     }
 
     &--item4 {
@@ -173,7 +178,7 @@
     &__wrapper {
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: 99px;
+      padding-top: 98px;
       padding-bottom: 94px;
     }
 
@@ -196,20 +201,25 @@
 
       &--item1 {
         order: 1;
-        padding-bottom: 39px;
+        padding-bottom: 37px;
         border-bottom: none;
       }
 
       &--item2 {
         order: 2;
         margin-right: 5px;
-        padding-bottom: 39px;
+        padding-bottom: 37px;
         border-bottom: none;
       }
 
       &--item3 {
         position: relative;
         order: 4;
+        left: 0;
+
+        & .advantages__item-number h4 {
+          margin-right: 30px;
+        }
       }
 
       &--item4 {
@@ -304,11 +314,15 @@
       }
 
       &--item2 {
-        padding-bottom: 324px;
+        padding-bottom: 319px;
       }
 
       &--item3 {
         padding-bottom: 40px;
+
+        & .advantages__item-number h4 {
+          margin-right: 0;
+        }
       }
 
       &--item3 .advantages__item-description p {

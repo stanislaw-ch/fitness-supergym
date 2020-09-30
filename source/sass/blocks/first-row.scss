@@ -120,14 +120,14 @@
   &__contacts-item:nth-child(1),
   &__contacts-item:nth-child(3) {
     width: 210px;
-    padding-right: 22px;
+    padding-right: 19px;
     border-right: 1px solid #74819c;
   }
 
   &__contacts-item:nth-child(2),
   &__contacts-item:nth-child(4) {
     width: auto;
-    margin-left: 51px;
+    margin-left: 53px;
   }
 
   &__contacts-item h4 {
@@ -140,7 +140,8 @@
   }
 
   &__contacts-item a {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 14px;
     color: #102654;
   }
 
@@ -189,11 +190,16 @@
 
       &--item-2 {
         padding-left: 0;
+        padding-bottom: 62px;
+      }
+
+      &--item-2:last-of-type {
+        padding-bottom: 62px;
       }
     }
 
     &__group h3 {
-      margin: 0 0 43px 0;
+      margin: 0 0 42px 0;
 
       font-size: 42px;
       line-height: 42px;
@@ -282,7 +288,7 @@
     &__group {
       width: 100%;
       max-width: 472px;
-      padding: 67px 0 67px;
+      padding: 67px 0 69px;
 
       // &--item-1 {
       //   }
@@ -327,11 +333,22 @@
     // &__contacts-item {
     // }
 
+    &__contacts-item p {
+      margin: 0 0 16px 0;
+    }
+
+    &__contacts-item a {
+      font-size: 18px;
+      line-height: 18px;
+      color: #102654;
+    }
+
     &__contacts-item:nth-child(1) {
       order: 1;
     }
 
     &__contacts-item:nth-child(2) {
+      margin-bottom: 24px;
       order: 3;
     }
 

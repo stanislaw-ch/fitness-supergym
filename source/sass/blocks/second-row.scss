@@ -1,7 +1,7 @@
 .second-row {
   display: flex;
   align-items: center;
-  padding-top: 5px;
+  // padding-top: 5px;
   width: 100%;
   min-height: 108px;
 
@@ -18,8 +18,8 @@
   }
 
   &__nav-item:first-child {
-    margin-right: auto;
-    // margin-right: 276px;
+    // margin-right: auto;
+    margin-right: 276px;
   }
 
   &__nav-item:first-child a {
@@ -41,6 +41,8 @@
   }
 
   &__nav-item a {
+    display: block;
+    padding-top: 2px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -74,6 +76,16 @@
   &__social-link svg:hover {
     fill: #d10a42;
   }
+
+  &__social-link {
+    &--instagram svg {
+      padding-top: 5px;
+    }
+
+    &--facebook svg {
+      padding-top: 5px;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -87,19 +99,22 @@
       margin-right: 30px;
     }
 
-    // &__nav-item:first-child {
-    //   margin-right: 62px;
-    // }
+    &__nav-item:first-child {//
+      margin-right: 62px;
+    }
 
     &__nav-item:first-child a {
       font-size: 24px;
       line-height: 24px;
+      padding-top: 0;
     }
 
     // &__nav-item:last-of-type {
     // }
 
     // &__nav-item a {
+    //   display: block;
+    //   padding-top: 2px;
     // }
 
     // &__social {
@@ -113,6 +128,13 @@
     // }
 
     // &__social-link {
+    //   &--instagram svg {
+    //     padding-top: 5px;
+    //   }
+
+    //   &--facebook svg {
+    //     padding-top: 5px;
+    //   }
     // }
   }
 }
@@ -121,13 +143,13 @@
   .second-row {
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 48px;
+    padding-bottom: 43px;
     margin: 0 auto;
     width: 566px;
 
     &__nav-list {
-      margin-bottom: 36px;
+      margin-bottom: 28px;
       flex-wrap: wrap;
     }
 
@@ -136,6 +158,10 @@
       margin-right: 0;
       margin-bottom: 16px;
       width: 50%;
+
+      & a {
+        font-size: 16px;
+      }
 
       &:nth-child(1) {
         order: 1;

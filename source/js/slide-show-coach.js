@@ -24,6 +24,11 @@
       slidesToShow = 2;
       itemWidth = container.clientWidth / slidesToShow;
     }
+    if (document.body.clientWidth < 768) {
+      slidesToScroll = 1;
+      slidesToShow = 1;
+      itemWidth = container.clientWidth / slidesToShow;
+    }
   };
 
   var setPosition = function () {
