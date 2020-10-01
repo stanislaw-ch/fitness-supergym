@@ -114,7 +114,7 @@
     }
 
     &__list-wrapper {
-      // position: relative;
+      position: relative;
       // max-width: 683px;
       margin: 0 auto;
     }
@@ -126,7 +126,7 @@
       margin-left: -8px;
     }
 
-    // &__list tr .timetable__cap-row {
+    // &__cap-row {
     //   position: absolute;
     //   left: 0;
     //   top: 0;
@@ -138,6 +138,9 @@
     }
 
     &__cap-row {
+      position: fixed;
+      left: 101vh;
+      top: 1vw;
       min-width: 63px;
       height: 108px;
     }
