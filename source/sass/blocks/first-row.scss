@@ -117,15 +117,15 @@
     padding-left: 5px;
   }
 
-  &__contacts-item:nth-child(1),
-  &__contacts-item:nth-child(3) {
+  &__contacts-item:nth-child(1n),
+  &__contacts-item:nth-child(3n) {
     width: 210px;
     padding-right: 19px;
     border-right: 1px solid #74819c;
   }
 
-  &__contacts-item:nth-child(2),
-  &__contacts-item:nth-child(4) {
+  &__contacts-item:nth-child(2n),
+  &__contacts-item:nth-child(4n) {
     width: auto;
     margin-left: 53px;
   }
@@ -149,8 +149,8 @@
     color: #d10a42;
   }
 
-  &__contacts-item:nth-child(3) p,
-  &__contacts-item:nth-child(4) p {
+  &__contacts-item:nth-child(3n) p,
+  &__contacts-item:nth-child(4n) p {
     margin-bottom: 0;
   }
 
@@ -231,21 +231,21 @@
       width: 100%;
     }
 
-    &__contacts-item:nth-child(1),
-    &__contacts-item:nth-child(3) {
+    &__contacts-item:nth-child(1n),
+    &__contacts-item:nth-child(3n) {
       width: 267px;
       padding-right: 48px;
       padding-left: 0;
     }
 
-    &__contacts-item:nth-child(2),
-    &__contacts-item:nth-child(4) {
+    &__contacts-item:nth-child(2n),
+    &__contacts-item:nth-child(4n) {
       margin-left: 48px;
       padding: 0;
     }
 
-    &__contacts-item:nth-child(1),
-    &__contacts-item:nth-child(2) {
+    &__contacts-item:nth-child(1n),
+    &__contacts-item:nth-child(2n) {
       margin-bottom: 11px;
     }
 
@@ -343,32 +343,32 @@
       color: #102654;
     }
 
-    &__contacts-item:nth-child(1) {
+    &__contacts-item:nth-child(1n) {
       order: 1;
     }
 
-    &__contacts-item:nth-child(2) {
+    &__contacts-item:nth-child(2n) {
       margin-bottom: 24px;
       order: 3;
     }
 
-    &__contacts-item:nth-child(3) {
+    &__contacts-item:nth-child(3n) {
       order: 2;
     }
 
-    &__contacts-item:nth-child(4) {
+    &__contacts-item:nth-child(4n) {
       order: 4;
     }
 
-    &__contacts-item:nth-child(1),
-    &__contacts-item:nth-child(3) {
+    &__contacts-item:nth-child(1n),
+    &__contacts-item:nth-child(3n) {
       width: 100%;
       padding-right: 0;
       border-right: none;
     }
 
-    &__contacts-item:nth-child(2),
-    &__contacts-item:nth-child(4) {
+    &__contacts-item:nth-child(2n),
+    &__contacts-item:nth-child(4n) {
       margin-left: 0;
     }
 
@@ -378,7 +378,7 @@
     // &__contacts-item p {
     // }
 
-    &__contacts-item:nth-child(3) p {
+    &__contacts-item:nth-child(3n) p {
       margin-bottom: 30px;
     }
 
