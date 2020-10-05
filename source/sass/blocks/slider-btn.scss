@@ -12,65 +12,59 @@
   &:hover::after {
     background-color: #1c3374;
   }
+}
 
-  &::before,
+.slider-btn::before,
+.slider-btn::after {
+  content: "";
+  left: -3px;
+  display: block;
+
+  width: 25px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.slider-btn--next {
+  &::before {
+    position: absolute;
+    top: 11px;
+    left: -4px;
+    transform: rotate(45deg);
+  }
+
   &::after {
-    content: "";
-    left: -3px;
-    display: block;
-
-    width: 25px;
-    height: 1px;
-    background-color: #c4c4c4;
-  }
-
-  &--next {
-    &::before {
-      position: absolute;
-      top: 11px;
-      left: -4px;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      position: absolute;
-      top: 29px;
-      left: -4px;
-      transform: rotate(-45deg);
-    }
-  }
-
-  &--previous {
-    &::before {
-      position: absolute;
-      top: 29px;
-      left: -3px;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      position: absolute;
-      top: 11px;
-      left: -3px;
-      transform: rotate(-45deg);
-    }
-  }
-
-  &[type="button"]:disabled {
-    pointer-events: none;
-
-    &:hover::before,
-    &:hover::after {
-
-      color: #9f9d9d;
-    }
+    position: absolute;
+    top: 29px;
+    left: -4px;
+    transform: rotate(-45deg);
   }
 }
 
+.slider-btn--previous {
+  &::before {
+    position: absolute;
+    top: 29px;
+    left: -3px;
+    transform: rotate(45deg);
+  }
 
-@media (max-width: 1199px) {
-  // .slider-btn {
-  // }
+  &::after {
+    position: absolute;
+    top: 11px;
+    left: -3px;
+    transform: rotate(-45deg);
+  }
+}
+
+.slider-btn[type="button"]:disabled {
+  pointer-events: none;
+
+  &:hover::before,
+  &:hover::after {
+
+    color: #9f9d9d;
+  }
 }
 
 @media (max-width: 767px) {

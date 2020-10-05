@@ -537,92 +537,96 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="page-footer__first-row first-row">
-      <li class="first-row__item first-row__item--left">
-        <div class="first-row__group first-row__group--item-1">
+    <ul class="page-footer__block-group block-group">
+      <li class="block-group__item block-group__item--left">
+        <div class="block-group__group block-group__group--item-1">
           <h3>Бесплатное занятие</h3>
           <form action="#" method="post" autocomplete="off">
-            <div class="first-row__user-info">
-              <div class="first-row__user-info-wrapper">
+            <div class="block-group__user-info">
+              <div class="block-group__user-info-wrapper">
                 <label for="name">Имя</label>
                 <input id="name" type="text" name="name" placeholder="" required="">
               </div>
-              <div class="first-row__user-info-wrapper">
+              <div class="block-group__user-info-wrapper">
                 <label for="phone">Телефон</label>
                 <input id="phone" type="tel" name="phone" placeholder="" required="">
               </div>
             </div>
-            <button class="first-row__button" type="submit">отправить</button>
+            <button class="block-group__button" type="submit">отправить</button>
           </form>
         </div>
       </li>
-      <li class="first-row__item first-row__item--right">
-        <div class="first-row__group first-row__group--item-2">
+      <li class="block-group__item block-group__item--right">
+        <div class="block-group__group block-group__group--item-2">
           <h3>Контакты </h3>
-          <ul class="first-row__contacts-list">
-            <li class="first-row__contacts-item">
-              <h4>Адрес:</h4>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
-            </li>
-            <li class="first-row__contacts-item">
-              <h4>Телефон:</h4>
-              <a href="tel:88005555555">8-800-555-55-55</a>
-            </li>
-            <li class="first-row__contacts-item">
-              <h4>График работы:</h4>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
-            </li>
-            <li class="first-row__contacts-item">
-              <h4>Email:</h4>
-              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-            </li>
-          </ul>
+          <div class="block-group__contacts-wrapper">
+            <div class="block-group__contacts-list-wrapper">
+              <div class="block-group__contacts-item">
+                <h4>Адрес:</h4>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div class="block-group__contacts-item">
+                <h4>График работы:</h4>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+            </div>
+            <div class="block-group__contacts-list-wrapper">
+              <div class="block-group__contacts-item">
+                <h4>Телефон:</h4>
+                <a href="tel:88005555555">8-800-555-55-55</a>
+              </div>
+              <div class="block-group__contacts-item">
+                <h4>Email:</h4>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
     </ul>
     <div class="page-footer__wrapper">
 
-      <div class="page-footer__second-row second-row container">
+      <div class="page-footer__footer footer container">
         <!-- <a href="#">Supergym</a> -->
-        <ul class="second-row__nav-list">
-          <li class="second-row__nav-item">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
             <a href="#">Supergym</a>
           </li>
-          <li class="second-row__nav-item">
+          <li class="footer__nav-item">
             <a href="#">Услуги</a>
           </li>
-          <li class="second-row__nav-item">
+          <li class="footer__nav-item">
             <a href="#">Абонементы</a>
           </li>
-          <li class="second-row__nav-item">
+          <li class="footer__nav-item">
             <a href="#">Акции</a>
           </li>
-          <li class="second-row__nav-item">
+          <li class="footer__nav-item">
             <a href="#">Тренеры</a>
           </li>
-          <li class="second-row__nav-item">
+          <li class="footer__nav-item">
             <a href="timetable.html">Расписание  </a>
           </li>
         </ul>
-        <ul class="second-row__social">
-          <li class="second-row__social-item">
-            <a class="second-row__social-link second-row__social-link--vkontakte" href="#">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--vkontakte" href="#">
               <span class="visually-hidden">vkontakte</span>
               <svg width="24" height="13">
                 <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li class="second-row__social-item">
-            <a class="second-row__social-link second-row__social-link--instagram" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href="#">
               <span class="visually-hidden">instagram</span>
               <svg width="24" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-ig"></use>
               </svg>
             </a>
           </li>
-          <li class="second-row__social-item">
-            <a class="second-row__social-link second-row__social-link--facebook" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href="#">
               <span class="visually-hidden">facebook</span>
               <svg width="12" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
@@ -635,10 +639,10 @@
   </footer>
 
   <script src="https://unpkg.com/imask"></script>
-  <script src="js/main.js"></script>
-  <!-- <script src="js/imask.es.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/imask.es.js"></script>
   <script src="js/slide-show-coach.js"></script>
   <script src="js/slide-show-review.js"></script>
-  <script src="js/tabs.js"></script> -->
+  <script src="js/tabs.js"></script>
 </body>
 </html>

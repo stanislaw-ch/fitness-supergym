@@ -2,207 +2,201 @@
 .advert {
   display: flex;
   justify-content: space-between;
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 395px;
-    margin-right: 65px;
-    padding-top: 113px;
-  }
-
-  &__wrapper p {
-    margin: 0 0 6px 0;
-
-    font-family: "Bebas Neue Regular", "Arial", sans-serif;
-    font-size: 49px;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 49px;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-
-  &__header {
-    position: relative;
-  }
-
-  &__header h2 {
-    margin: 0;
-
-    font-family: "Bebas Neue Regular", "Arial", sans-serif;
-    font-size: 109px;
-    line-height: 109px;
-    text-align: right;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-
-  &__subtitle-list {
-    position: absolute;
-    bottom: 22px;
-    right: 264px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  &__subtitle-item {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    color: #ffffff;
-  }
-
-  &__button {
-    margin-top: 63px;
-    padding: 19px 55px;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-    border: 4px solid #ffffff;
-  }
-
-  &__button:hover {
-    color: #3ce93c;
-
-    border: 4px solid #3ce93c;
-  }
-
-  &__pucture {
-    width: 500px;
-    height: 556px;
-    margin-top: -4px;
-    margin-right: auto;
-
-    background-color: #3a4b70;
-  }
-
-  &__pucture img {
-    display: block;
-  }
-
-  &__social {
-    margin-top: auto;
-    margin-bottom: 39px;
-  }
-
-  &__social-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 88px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  // &__social-item {
-  // }
-
-  &__social-list a {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-
-  &__social-list a:hover {
-    color: #3ce93c;
-  }
 }
 
+.advert__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 395px;
+  margin-right: 65px;
+  padding-top: 113px;
+}
+
+.advert__wrapper p {
+  margin: 0 0 6px 0;
+
+  font-family: "Bebas Neue Regular", "Arial", sans-serif;
+  font-size: 49px;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.advert__header {
+  position: relative;
+}
+
+.advert__header h2 {
+  margin: 0;
+
+  font-family: "Bebas Neue Regular", "Arial", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.advert__subtitle-list {
+  position: absolute;
+  bottom: 22px;
+  right: 264px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advert__subtitle-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.advert__button {
+  margin-top: 63px;
+  padding: 19px 55px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border: 4px solid #ffffff;
+}
+
+.advert__button:hover {
+  color: #3ce93c;
+
+  border: 4px solid #3ce93c;
+}
+
+.advert__pucture {
+  width: 500px;
+  height: 556px;
+  margin-top: -4px;
+  margin-right: auto;
+
+  background-color: #3a4b70;
+}
+
+.advert__pucture img {
+  display: block;
+}
+
+.advert__social {
+  margin-top: auto;
+  margin-bottom: 39px;
+}
+
+.advert__social-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advert__social-list a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.advert__social-list a:hover {
+  color: #3ce93c;
+}
+
+
 @media (max-width: 1199px) {
-  .advert {
-    &__wrapper {
-      padding-top: 48px;
-      margin-right: 30px;
-    }
+  .advert__wrapper {
+    padding-top: 48px;
+    margin-right: 30px;
+  }
 
-    &__wrapper p {
-      margin-bottom: 3px;
-      font-size: 34px;
-      line-height: 34px;
-    }
+  .advert__wrapper p {
+    margin-bottom: 3px;
+    font-size: 34px;
+    line-height: 34px;
+  }
 
-    &__header h2 {
-      font-size: 86px;
-      line-height: 86px;
-    }
+  .advert__header h2 {
+    font-size: 86px;
+    line-height: 86px;
+  }
 
-    &__subtitle-list {
-      bottom: 12px;
-      right: 210px;
-    }
+  .advert__subtitle-list {
+    bottom: 12px;
+    right: 210px;
+  }
 
-    &__button {
-      margin-top: 46px;
-      margin-right: -2px;
-      padding: 20px 32px;
-    }
+  .advert__button {
+    margin-top: 46px;
+    margin-right: -2px;
+    padding: 20px 32px;
+  }
 
-    &__social {
-      display: none;
-    }
+  .advert__social {
+    display: none;
+  }
 
-    &__pucture {
-      width: 324px;
-      height: 390px;
-    }
+  .advert__pucture {
+    width: 324px;
+    height: 390px;
+  }
 
-    &__pucture img {
-      max-width: 324px;
-    }
+  .advert__pucture img {
+    max-width: 324px;
   }
 }
 
 @media (max-width: 767px) {
-  .advert {
-    &__wrapper {
-      width: 290px;
-      margin-right: 0;
-    }
+  .advert__wrapper {
+    width: 290px;
+    margin-right: 0;
+  }
 
-    &__wrapper p {
-      font-size: 28px;
-    }
+  .advert__wrapper p {
+    font-size: 28px;
+  }
 
-    &__header h2 {
-      font-size: 78px;
-      line-height: 78px;
-    }
+  .advert__header h2 {
+    font-size: 78px;
+    line-height: 78px;
+  }
 
-    &__subtitle-list {
-      bottom: 6px;
-      right: 177px;
-    }
+  .advert__subtitle-list {
+    bottom: 6px;
+    right: 177px;
+  }
 
-    &__button {
-      box-sizing: border-box;
-      margin-top: 48px;
-      padding-top: 20px;
-      width: 100%;
+  .advert__button {
+    box-sizing: border-box;
+    margin-top: 48px;
+    padding-top: 20px;
+    width: 100%;
 
-      text-align: center;
-    }
+    text-align: center;
+  }
 
-    &__pucture {
-      display: none;
-    }
+  .advert__pucture {
+    display: none;
   }
 }

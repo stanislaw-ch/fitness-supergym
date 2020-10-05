@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <title>Фитнес центр "Supergym"</title>
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bebas-neue-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -28,137 +28,155 @@
         <button class="timetable__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <table class="timetable__list">
-          <tr>
-            <th>
-            </th>
-            <th class="timetable__cap-coll">
-              Понедельник
-            </th>
-            <th class="timetable__cap-coll">
-              Вторник
-            </th>
-            <th class="timetable__cap-coll">
-              Среда
-            </th>
-            <th class="timetable__cap-coll">
-              Четверг
-            </th>
-            <th class="timetable__cap-coll">
-              Пятница
-            </th>
-            <th class="timetable__cap-coll">
-              Суббота
-            </th>
-            <th class="timetable__cap-coll">
-              Воскресенье
-            </th>
-          </tr>
-          <tr>
-            <th class="timetable__cap-row">
+        <div class="timetable__wrapper">
+          <ul class="timetable__time-list">
+            <li class="timetable__time-item">
               08:00
-            </th>
-            <td class="timetable__field">
-              CrossFit
-            </td>
-            <td class="timetable__field">
-              Aerostretching
-            </td>
-            <td class="timetable__field">
-              Hot Iron
-            </td>
-            <td class="timetable__field">
-              Pilates
-            </td>
-            <td class="timetable__field">
-              Stretching
-            </td>
-            <td class="timetable__field">
-              Functional
-            </td>
-            <td class="timetable__field">
-              Body Sculpt
-            </td>
-          </tr>
-          <tr>
-            <th class="timetable__cap-row">
+            </li>
+            <li class="timetable__time-item">
               12:00
-            </th>
-            <td class="timetable__field">
-              Body Sculpt
-            </td>
-            <td class="timetable__field">
-              CrossFit
-            </td>
-            <td class="timetable__field">
-              Aerostretching
-            </td>
-            <td class="timetable__field">
-              Hot Iron
-            </td>
-            <td class="timetable__field">
-              Pilates
-            </td>
-            <td class="timetable__field">
-              Stretching
-            </td>
-            <td class="timetable__field">
-              Functional
-            </td>
-          </tr>
-          <tr>
-            <th class="timetable__cap-row">
+            </li>
+            <li class="timetable__time-item">
               18:00
-            </th>
-            <td class="timetable__field">
-              Functional
-            </td>
-            <td class="timetable__field">
-              Body Sculpt
-            </td>
-            <td class="timetable__field">
-              CrossFit
-            </td>
-            <td class="timetable__field">
-              Aerostretching
-            </td>
-            <td class="timetable__field">
-              Hot Iron
-            </td>
-            <td class="timetable__field">
-              Pilates
-            </td>
-            <td class="timetable__field">
-              Stretching
-            </td>
-          </tr>
-          <tr>
-            <th class="timetable__cap-row">
+            </li>
+            <li class="timetable__time-item">
               20:00
-            </th>
-            <td class="timetable__field">
-              Stretching
-            </td>
-            <td class="timetable__field">
-              Functional
-            </td>
-            <td class="timetable__field">
-              Body Sculpt
-            </td>
-            <td class="timetable__field">
-              CrossFit
-            </td>
-            <td class="timetable__field">
-              Aerostretching
-            </td>
-            <td class="timetable__field">
-              Hot Iron
-            </td>
-            <td class="timetable__field">
-              Pilates
-            </td>
-          </tr>
-        </table>
+            </li>
+          </ul>
+          <div class="timetable__colls-wrapper">
+            <div class="timetable__colls-container">
+              <ul class="timetable__day-list">
+                <li class="timetable__day-item">
+                  Понедельник
+                </li>
+                <li class="timetable__day-item">
+                  Вторник
+                </li>
+                <li class="timetable__day-item">
+                  Среда
+                </li>
+                <li class="timetable__day-item">
+                  Четверг
+                </li>
+                <li class="timetable__day-item">
+                  Пятница
+                </li>
+                <li class="timetable__day-item">
+                  Суббота
+                </li>
+                <li class="timetable__day-item">
+                  Воскресенье
+                </li>
+              </ul>
+              <div class="timetable__field-wrapper">
+                <ul class="timetable__field-list">
+                    <li class="timetable__field-item">
+                      CrossFit
+                    </li>
+                    <li class="timetable__field-item">
+                      Body Sculpt
+                    </li>
+                    <li class="timetable__field-item">
+                      Functional
+                    </li>
+                    <li class="timetable__field-item">
+                      Stretching
+                    </li>
+                  </ul>
+
+                  <ul class="timetable__field-list">
+                    <li class="timetable__field-item">
+                      Aerostretching
+                    </li>
+                    <li class="timetable__field-item">
+                      CrossFit
+                    </li>
+                    <li class="timetable__field-item">
+                      Body Sculpt
+                    </li>
+                    <li class="timetable__field-item">
+                      Functional
+                    </li>
+                  </ul>
+
+                  <ul class="timetable__field-list">
+                    <li class="timetable__field-item">
+                      Hot Iron
+                    </li>
+                    <li class="timetable__field-item">
+                      Aerostretching
+                    </li>
+                    <li class="timetable__field-item">
+                      CrossFit
+                    </li>
+                    <li class="timetable__field-item">
+                      Body Sculpt
+                    </li>
+                  </ul>
+
+                  <ul class="timetable__field-list">
+                    <li class="timetable__field-item">
+                      Pilates
+                    </li>
+                    <li class="timetable__field-item">
+                      Hot Iron
+                    </li>
+                    <li class="timetable__field-item">
+                      Aerostretching
+                    </li>
+                    <li class="timetable__field-item">
+                      CrossFit
+                    </li>
+                  </ul>
+
+                  <ul class="timetable__field-list">
+                    <li class="timetable__field-item">
+                      Stretching
+                    </li>
+                    <li class="timetable__field-item">
+                      Pilates
+                    </li>
+                    <li class="timetable__field-item">
+                      Hot Iron
+                    </li>
+                    <li class="timetable__field-item">
+                      Aerostretching
+                    </li>
+                  </ul>
+
+                  <ul class="timetable__field-list">
+                    <li class="timetable__field-item">
+                      Functional
+                    </li>
+                    <li class="timetable__field-item">
+                      Stretching
+                    </li>
+                    <li class="timetable__field-item">
+                      Pilates
+                    </li>
+                    <li class="timetable__field-item">
+                      Hot Iron
+                    </li>
+                  </ul>
+
+                  <ul class="timetable__field-list">
+                    <li class="timetable__field-item">
+                      Body Sculpt
+                    </li>
+                    <li class="timetable__field-item">
+                      Functional
+                    </li>
+                    <li class="timetable__field-item">
+                      Stretching
+                    </li>
+                    <li class="timetable__field-item">
+                      Pilates
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
         <div class="timetable__scroll timetable__scroll--hidden">
           <button class="timetable__scroll-item timetable__scroll-item--prev timetable__scroll-item--active"></button>
           <button class="timetable__scroll-item timetable__scroll-item--next"></button>
