@@ -10,11 +10,9 @@
   var tableRows = timeTable.querySelectorAll('.timetable__time-item');
 
   var position = 0;
-  var itemsCount = tableFields.length / 4;
-  var itemWidth = tableRows.clientWidth - 66 + 16;
+  // var itemsCount = tableFields.length / 4;
+  // var itemWidth = tableRows.clientWidth - 66 + 16;
   var movePosition = 463;
-
-  console.log(movePosition);
 
   var btnPrev = document.querySelector('.timetable__scroll-item--prev');
   var btnNext = document.querySelector('.timetable__scroll-item--next');
@@ -46,8 +44,6 @@
     setPosition();
     // checkBtns();
   });
-
-
 
   var unsetActiveFieldElement = function () {
     for (var j = 0; j < tableFields.length; j++) {
