@@ -18,7 +18,7 @@
     letter-spacing: 0.03em;
   }
 
-  &__list-wrapper {
+  &__table-wrapper {
     overflow: hidden;
   }
 
@@ -151,6 +151,7 @@
       background-color: #ffffff;
       border: 3px solid #ed0233;
       box-sizing: border-box;
+      cursor: pointer;
     }
   }
 
@@ -246,20 +247,22 @@
     }
 
     &__title {
+      z-index: 3;
       font-size: 32px;
       line-height: 32px;
     }
 
-    &__list-wrapper {
+    &__table-wrapper {
       position: relative;
       max-width: 302px;
-      padding-top: 66px;
+      // padding-top: 66px;
     }
 
     &__toggle {
+      z-index: 2;
       position: absolute;
-      right: 1px;
-      top: 8px;
+      right: 0;
+      top: 0;
 
       display: block;
       box-sizing: border-box;
@@ -267,7 +270,7 @@
       height: 60px;
 
       border: 3px solid #1c3374;
-      background-color: transparent;
+      background-color: #ffffff;
 
       &::before,
       &::after {
@@ -279,63 +282,121 @@
         background-color: #1c3374;
       }
 
-      &::before {
-        position: absolute;
-        top: 25px;
-        left: 10px;
-        transform: rotate(45deg);
+      &--closed {
+        &::before {
+          position: absolute;
+          top: 25px;
+          left: 10px;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          position: absolute;
+          top: 25px;
+          left: 20px;
+          transform: rotate(-45deg);
+        }
       }
 
-      &::after {
-        position: absolute;
-        top: 25px;
-        left: 20px;
-        transform: rotate(-45deg);
+      &--opened {
+        & .timetable__toggle-bg {
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: -1;
+
+          width: 50%;
+          height: 100%;
+          overflow: auto;
+
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        &::before {
+          position: absolute;
+          top: 25px;
+          left: 10px;
+          transform: rotate(-45deg);
+        }
+
+        &::after {
+          position: absolute;
+          top: 25px;
+          left: 20px;
+          transform: rotate(45deg);
+        }
       }
     }
 
-    &__list {
-      min-width: 305px;
-      margin-left: -8px;
-      display: flex;
+    &__colls-container {
+      width: 220px;
+      padding-top: 68px;
     }
 
-    // &__list tr:nth-child(2) {
-    //   margin-top: 50px;
-    // }
-
-    &__list tr:first-child {
+    &__day-list {
+      z-index: 2;
       position: absolute;
-      top: -10px;
-      right: 50px;
-    }
-
-    &__cap-coll {
-      // position: absolute;
-      display: flex;
+      top: 0;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 173px;
-      height: 60px;
+      width: 172px;
     }
 
-    &__cap-coll:nth-child(n + 3) {
-      display: none;
-      margin-top: -3px;
-    }
+    &__day-item {
+      min-width: auto;
+      height: 58px;
+      margin: 0;
 
-    &__cap-row {
-      width: 61px;
-      height: 80px;
-    }
+      border-bottom: none;
+      background-color: #ffffff;
 
-    &__field {
-      min-width: 213px;
-
-      &:nth-child(n + 3) {
-        display: none;
+      &--active {
+        height: 60px;
+        background-color: #ed0233;
+        color: #ffffff;
+        pointer-events: none;
+        border-bottom: 3px solid #1c3374;
       }
+
+      &:hover {
+        background-color: #ed0233;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+
+    &__day-item:last-child {
+      margin: 0;
+      border-bottom: 3px solid #1c3374;
+    }
+
+    &__field-item {
+      min-width: 220px;
+      height: 79px;
+
+      // &--active {
+      //   background-color: #ffffff;
+      //   border: 3px solid #1c3374;
+      // }
+
+      // &--hover {
+      //   background-color: #ffffff;
+      //   border: 3px solid #ed0233;
+      //   box-sizing: border-box;
+      // }
+
+      // &:hover {
+      //   background-color: #ffffff;
+      //   border: 3px solid #ed0233;
+      //   box-sizing: border-box;
+      // }
+    }
+
+    &__time-item {
+      height: 79px;
+    }
+
+    &__time-list {
+      margin: 68px 5px 0 0;
     }
 
     &__scroll {
