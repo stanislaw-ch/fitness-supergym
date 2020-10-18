@@ -8,7 +8,6 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("postcss-csso");
-// var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -24,10 +23,23 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(rename("style.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("css-min", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    // .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -44,9 +56,10 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css-min"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("copy", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("concat", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -97,7 +110,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    // "source/js/**",
     "source//*.ico"
     ], {
       base: "source"
@@ -109,5 +122,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "webp", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "webp", "copy", "concat", "css", "css-min", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

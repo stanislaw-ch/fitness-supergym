@@ -21,13 +21,12 @@
     <section class="page-main__timetable timetable">
 
       <header class="timetable__header">
-        <h2 class="visually-hidden">Расписание</h2>
         <b class="timetable__title">Расписание</b>
       </header>
       <div class="timetable__table-wrapper">
         <button class="timetable__toggle timetable__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <div class="timetable__toggle-bg"></div>
+          <span class="timetable__toggle-bg"></span>
         </button>
         <div class="timetable__wrapper">
           <ul class="timetable__time-list">
@@ -179,13 +178,15 @@
           </div>
         </div>
         <div class="timetable__scroll timetable__scroll--hidden">
-          <button class="timetable__scroll-item timetable__scroll-item--prev timetable__scroll-item--active"></button>
-          <button class="timetable__scroll-item timetable__scroll-item--next"></button>
+          <button class="timetable__scroll-item timetable__scroll-item--prev timetable__scroll-item--active" type="button"></button>
+          <span class="visually-hidden">Прокрутить расписание влево</span>
+          <button class="timetable__scroll-item timetable__scroll-item--next" type="button"></button>
+          <span class="visually-hidden">Прокрутить расписание вправо</span>
         </div>
       </div>
     </section>
 
   </main>
-  <script src="js/timetable.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
