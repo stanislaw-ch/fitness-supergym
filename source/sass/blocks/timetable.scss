@@ -237,7 +237,7 @@
 @media (max-width: 767px) {
   .timetable__header {
     margin-top: 66px;
-    margin-bottom: 38px;
+    margin-bottom: 46px;
   }
 
   .timetable__title {
@@ -337,7 +337,7 @@
     position: absolute;
     top: 0;
     flex-direction: column;
-    width: 172px;
+    width: 174px;
   }
 
   .timetable__day-item {
@@ -374,11 +374,12 @@
   }
 
   .timetable__time-item {
-    height: 79px;
+    height: 80px;
+    width: 60px;
   }
 
   .timetable__time-list {
-    margin: 68px 5px 0 0;
+    margin: 68px 3px 0 0;
   }
 
   .timetable__scroll {

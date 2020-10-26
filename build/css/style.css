@@ -489,7 +489,9 @@ input[type="radio"].visually-hidden {
   min-height: 211px;
   padding: 24px 27px 27px;
   margin-bottom: 40px;
-  border: 7px solid transparent;
+  border-color: transparent;
+  border-width: 7px;
+  border-style: solid;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 7; }
 
@@ -2493,7 +2495,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .timetable__header {
     margin-top: 66px;
-    margin-bottom: 38px; }
+    margin-bottom: 46px; }
   .timetable__title {
     font-size: 32px;
     line-height: 32px; }
@@ -2563,7 +2565,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 172px; }
+    width: 174px; }
   .timetable__day-item {
     min-width: auto;
     height: 58px;
@@ -2587,9 +2589,10 @@ input[type="radio"].visually-hidden {
     min-width: 220px;
     height: 79px; }
   .timetable__time-item {
-    height: 79px; }
+    height: 80px;
+    width: 60px; }
   .timetable__time-list {
-    margin: 68px 5px 0 0; }
+    margin: 68px 3px 0 0; }
   .timetable__scroll--hidden {
     display: none; } }
 
@@ -2930,7 +2933,9 @@ input[type="radio"].visually-hidden {
 
 .subscription__type-item:hover {
   padding: 57px 70px;
-  border: 7px solid transparent;
+  border-color: transparent;
+  border-width: 7px;
+  border-style: solid;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 7; }
 

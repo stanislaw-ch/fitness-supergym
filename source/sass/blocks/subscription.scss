@@ -102,7 +102,10 @@
 
 .subscription__type-item:hover {
   padding: 57px 70px;
-  border: 7px solid transparent;
+  // border: 7px solid transparent;
+  border-color: transparent;
+  border-width: 7px;
+  border-style: solid;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 7;
 }
