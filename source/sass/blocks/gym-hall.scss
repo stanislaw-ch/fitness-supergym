@@ -59,7 +59,7 @@
 
 .gym-hall__video {
   position: absolute;
-  bottom: 5px;
+  top: 408px;
   right: 360px;
 
   width: 364px;
@@ -89,13 +89,20 @@
   top: 50%;
   left: 50%;
 
-  margin-left: -55px;
+  width: 100px;
+  height: 100px;
+  margin-left: -48px;
   margin-top: -50px;
 
   background-color: transparent;
   border: none;
+  background-image: url("../img/icon-play-btn.png");
 
   cursor: pointer;
+
+  &:hover {
+    background-image: url("../img/icon-play-btn_hov.png");
+  }
 }
 
 @media (max-width: 1199px) {
@@ -141,6 +148,7 @@
   }
 
   .gym-hall__video {
+    top: auto;
     bottom: 0;
     right: 50%;
 
@@ -150,9 +158,12 @@
   }
 
   .gym-hall__button {
-    width: 82px;
-    margin-left: -42px;
-    margin-top: -36px;
+    width: 73px;
+    height: 73px;
+    margin-left: -37px;
+    margin-top: -37px;
+    background-size: 73px 73px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -210,9 +221,5 @@
     width: 320px;
     height: 167px;
     margin-right: 0;
-  }
-
-  .gym-hall__button {
-    margin-left: -41px;
   }
 }

@@ -42,8 +42,8 @@
 
 .advert__subtitle-list {
   position: absolute;
-  bottom: 22px;
-  right: 264px;
+  top: 133px;
+  right: 263px;
 
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@
   margin-top: -4px;
   margin-right: auto;
 
-  background-color: #3a4b70;
+  background-color: #182646;
 }
 
 .advert__pucture img {
@@ -143,7 +143,7 @@
   }
 
   .advert__subtitle-list {
-    bottom: 12px;
+    top: 96px;
     right: 210px;
   }
 
@@ -183,7 +183,7 @@
   }
 
   .advert__subtitle-list {
-    bottom: 6px;
+    top: 85px;
     right: 177px;
   }
 

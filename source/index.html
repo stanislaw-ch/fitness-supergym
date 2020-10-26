@@ -17,7 +17,7 @@
 
     <div class="page-header__wrapper container">
       <ul class="page-header__group">
-        <li class="page-header__logo"><a href="#">Supergym</a></li>
+        <li class="page-header__logo"><a>Supergym</a></li>
         <li class="page-header__phone"><a href="tel:88005555555">8-800-555-55-55</a></li>
       </ul>
 
@@ -103,7 +103,10 @@
           </picture>
           <button class="gym-hall__button" type="button">
             <span class="visually-hidden">Воспроизвести</span>
-            <img src="img/icon-play-btn.png" width="100" height="100" alt="Иконка кнопки play">
+            <!-- <svg width="100" height="100">
+              <use xlink:href="img/sprite_auto.svg#icon-play-btn"></use>
+            </svg> -->
+            <!-- <img src="img/icon-play-btn.png" width="100" height="100" alt="Иконка кнопки play"> -->
           </button>
         </div>
       </div>
@@ -462,16 +465,18 @@
                 <p>Безлимитный абонемент в тренажерный зал</p>
                 <a href="#">подробнее</a>
               </div>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/action_mobile@1x.webp 1x, img/action_mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)" srcset="img/action_tablet@1x.webp 1x, img/action_tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/action_desktop@1x.webp 1x, img/action_desktop@2x.webp 2x">
+              <div class="action__img">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/action_mobile@1x.webp 1x, img/action_mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/action_tablet@1x.webp 1x, img/action_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/action_desktop@1x.webp 1x, img/action_desktop@2x.webp 2x">
 
-                <source srcset="img/action_mobile@1x.png 1x, img/action_mobile@2x.png 2x" media="(max-width: 767px)">
-                <source srcset="img/action_tablet@1x.png 1x, img/action_tablet@2x.png 2x" media="(max-width: 1199px)">
-                <!-- 1х: 1200px; 2x: 2400px -->
-                <img src="img/action_desktop@1x.png" srcset="img/action_desktop@2x.png 2x" width="280" height="462" alt="Изображение промо акции">
-              </picture>
+                  <source srcset="img/action_mobile@1x.png 1x, img/action_mobile@2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="img/action_tablet@1x.png 1x, img/action_tablet@2x.png 2x" media="(max-width: 1199px)">
+                  <!-- 1х: 1200px; 2x: 2400px -->
+                  <img src="img/action_desktop@1x.png" srcset="img/action_desktop@2x.png 2x" width="280" height="462" alt="Изображение промо акции">
+                </picture>
+              </div>
             </div>
           <ul class="action__list">
             <li class="action__item">
@@ -580,10 +585,10 @@
     <div class="page-footer__wrapper">
 
       <div class="page-footer__footer footer container">
+        <div class="footer__logo">
+          <a href="#">Supergym</a>
+        </div>
         <ul class="footer__nav-list">
-          <li class="footer__nav-item">
-            <a href="#">Supergym</a>
-          </li>
           <li class="footer__nav-item">
             <a href="#">Услуги</a>
           </li>

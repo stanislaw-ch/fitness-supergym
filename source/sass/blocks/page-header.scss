@@ -1,5 +1,7 @@
 .page-header {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  // background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-image: url("../img/main_bg_desktop@1x.png");
+  background-size: 100% 100%;
 }
 
 .page-header__wrapper {
@@ -32,8 +34,8 @@
   color: #ffffff;
 }
 
-.page-header__phone a:hover,
-.page-header__logo a:hover {
+.page-header__phone a[href]:hover,
+.page-header__logo a[href]:hover {
   color: #ff073d;
 }
 
@@ -75,6 +77,12 @@
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
+  .page-header__group {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
   .page-header__wrapper {
     max-width: 566px;
     padding-top: 18px;
@@ -84,6 +92,8 @@
   .page-header__advert {
     max-width: 380px;
     margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page-header__logo a {

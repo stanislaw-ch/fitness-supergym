@@ -93,6 +93,13 @@
   border-bottom: 1px solid  #1c3374;
 }
 
+.action__img {
+  display: flex;
+  align-items: flex-end;
+
+  background-color: #3f66d7;
+}
+
 .action__list {
   display: flex;
   flex-direction: column;
@@ -110,10 +117,15 @@
   box-sizing: border-box;
   min-height: 211px;
   padding: 24px 27px 27px;
+  margin-bottom: 40px;
 
   border: 7px solid transparent;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 7;
+}
+
+.action__item:last-child {
+  margin-bottom: 0;
 }
 
 .action__item h3 {
@@ -127,7 +139,7 @@
 }
 
 .action__item p {
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .action__item a {
@@ -202,6 +214,7 @@
   .action__item {
     width: 324px;
     padding: 24px 27px 29px;
+    margin-bottom: 0;
   }
 
   .action__item a {
