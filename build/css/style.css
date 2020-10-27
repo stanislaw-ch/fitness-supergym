@@ -980,7 +980,7 @@ input[type="radio"].visually-hidden {
   font-size: 109px;
   line-height: 109px;
   text-align: right;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.0319em;
   color: #ffffff; }
 
 .advert__subtitle-list {
@@ -1789,7 +1789,7 @@ input[type="radio"].visually-hidden {
 
 .page-header {
   background-image: url("../img/main_bg_desktop@1x.png");
-  background-size: 100% 100%; }
+  background-size: cover; }
 
 .page-header__wrapper {
   padding-top: 27px;
