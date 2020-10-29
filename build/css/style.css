@@ -980,7 +980,16 @@ input[type="radio"].visually-hidden {
   font-size: 109px;
   line-height: 109px;
   text-align: right;
-  letter-spacing: 0.0319em;
+  letter-spacing: 0.03em;
+  color: #ffffff; }
+
+.safari {
+  margin: 0;
+  font-family: "Bebas Neue Regular", "Arial", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+  text-align: right;
+  letter-spacing: 0;
   color: #ffffff; }
 
 .advert__subtitle-list {

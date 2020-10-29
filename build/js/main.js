@@ -15,6 +15,12 @@
 'use strict';
 
 (function () {
+  var headerTitle = document.querySelector('.advert__header h2');
+
+  if (navigator.userAgent.indexOf('Safari')) {
+    headerTitle.classList.add('safari');
+  }
+
   var position = 0;
   var slidesToShow = 1;
   var slidesToScroll = 1;
