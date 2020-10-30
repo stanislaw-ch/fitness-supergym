@@ -16,10 +16,8 @@
 
 (function () {
   var advertHeader = document.querySelector('.advert__header');
-  // var advertHeadersSafari = document.querySelector('.advert__header-safari');
 
   if (navigator.userAgent.indexOf('Mac') !== -1 && navigator.userAgent.indexOf('Safari') !== -1) {
-    // advertHeader.classList.remove('advert__header');
     advertHeader.classList.add('advert__header-safari');
   } else {
     advertHeader.classList.remove('advert__header-safari');
