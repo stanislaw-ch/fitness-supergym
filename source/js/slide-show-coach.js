@@ -1,10 +1,14 @@
 'use strict';
 
 (function () {
-  var headerTitle = document.querySelector('.advert__header h2');
+  var advertHeader = document.querySelector('.advert__header');
+  var advertHeadersSafari = document.querySelector('.advert__header-safari');
 
-  if (navigator.userAgent.indexOf('Safari')) {
-    headerTitle.classList.add('safari');
+  if (!advertHeadersSafari && navigator.userAgent.indexOf('Safari') !== -1) {
+    // advertHeader.classList.remove('advert__header');
+    advertHeader.classList.add('advert__header-safari');
+  } else {
+    advertHeader.classList.remove('advert__header-safari');
   }
 
   var position = 0;
