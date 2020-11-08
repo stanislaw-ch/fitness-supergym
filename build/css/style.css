@@ -1234,7 +1234,7 @@ input[type="radio"].visually-hidden {
   line-height: 150%;
   color: #ffffff; }
 
-@media (max-width: 1272px) {
+@media (max-width: 1280px) {
   .coach {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1752,6 +1752,9 @@ input[type="radio"].visually-hidden {
     width: 320px;
     height: 167px;
     margin-right: 0; } }
+
+.page-main {
+  overflow-y: hidden; }
 
 .page-footer__wrapper {
   display: -webkit-box;
@@ -2842,7 +2845,9 @@ input[type="radio"].visually-hidden {
       top: 6px; } }
 
 .subscription {
-  background: #f8f9fc; }
+  position: relative;
+  background: #f8f9fc;
+  z-index: 1; }
 
 .subscription__wrapper {
   position: relative;

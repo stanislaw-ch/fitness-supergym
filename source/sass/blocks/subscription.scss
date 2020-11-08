@@ -1,5 +1,12 @@
 .subscription {
+  position: relative;
   background: #f8f9fc;
+  // background-image: url("../img/bg_desktop@1x.png");
+  // background-repeat: no-repeat;
+  // background-position: 1407px 506px;
+  // background-size: 287px 494px;
+  z-index: 1;
+  // overflow: hidden;
 }
 
 .subscription__wrapper {
@@ -8,6 +15,9 @@
   min-height: 851px; //
   padding-top: 115px;
   padding-bottom: 80px;
+  // background-image: url("../img/bg_desktop@1x.png");
+  // background-repeat: no-repeat;
+  // background-position: 966px 506px;
 }
 
 .subscription__header {
