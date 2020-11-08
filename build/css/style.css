@@ -1801,7 +1801,8 @@ input[type="radio"].visually-hidden {
 
 .page-header {
   background-image: url("../img/main_bg_desktop@1x.png");
-  background-size: cover; }
+  background-size: cover;
+  background-color: #6d081e; }
 
 .page-header__wrapper {
   padding-top: 27px;
@@ -3083,8 +3084,6 @@ input[type="radio"].visually-hidden {
     .subscription__type-price::before {
       top: -17px;
       font-size: 82px; }
-  .subscription__type-button {
-    width: 100%; }
   .subscription__wrapper img {
     display: none; } }
 
