@@ -1839,8 +1839,6 @@ input[type="radio"].visually-hidden {
   color: #ff073d; }
 
 @media (max-width: 1199px) {
-  .page-header {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
   .page-header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1867,8 +1865,6 @@ input[type="radio"].visually-hidden {
     line-height: 24px; } }
 
 @media (max-width: 767px) {
-  .page-header {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
   .page-header__group {
     width: 100%;
     max-width: 350px;

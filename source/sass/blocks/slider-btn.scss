@@ -84,24 +84,20 @@
     &--next {
       &::before {
         top: 6px;
-        // left: 1px;
       }
 
       &::after {
         top: 16px;
-        // left: 1px;
       }
     }
 
     &--previous {
       &::before {
         top: 16px;
-        // left: 1px;
       }
 
       &::after {
         top: 6px;
-        // left: 1px;
       }
     }
   }
