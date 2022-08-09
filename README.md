@@ -1,16 +1,20 @@
-# Gulp template Liga A
-## Краткая инструкция по работе
-### Для начала работы у вас должент быть установлен:
-* Node.js v.10.15.3
-* Gulp v4
-* npm last version
-## Основные команды для работы
-* Установка - `npm i`
-* Запуск локального сервера - `npm start`
-* Сборка проекта без запуска локального сервера - `npm run-script build`
-* Запуск тестирования на соответствия код-гайдам - `npm test`
+# "Supergym"
+Internet site of the fitness center.
 
-## Все разработка ведёться в директории `source`
-## Итоговый код попадает в директорию `build`
+Website: https://stanislaw-ch.github.io/fitness-supergym/build/index.html
 
-Если у вас есть желание что-то изменить или улучшить, пожалуйста, открывайте pull request с вашими комментариями.
+## Table of contents
+- Overview
+- Technologies
+
+## Overview
+A website for the fitness center "Supergym".
+
+## Technologies
+The stack used for this project was:
+- HTML
+- CSS
+- JavaScript
+- Sass(SCSS)
+- Gulp
+- BEM
