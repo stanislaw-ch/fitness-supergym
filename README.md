@@ -1,5 +1,5 @@
 # "Supergym"
-Internet site of the fitness center.
+Internet site for the fitness center.
 
 Website: https://stanislaw-ch.github.io/fitness-supergym/build/index.html
 
@@ -8,7 +8,7 @@ Website: https://stanislaw-ch.github.io/fitness-supergym/build/index.html
 - Technologies
 
 ## Overview
-A website for the fitness center "Supergym".
+Study project
 
 ## Technologies
 The stack used for this project was:
